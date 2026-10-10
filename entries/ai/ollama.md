@@ -10,6 +10,8 @@ language: Go
 stars: 182543
 stars_at: 2026-10-10
 summary: 用一条命令下载并运行本地大模型，再通过本机接口供其他程序调用。
+trending: yes
+trending_why: 2023 年后成为在自己电脑上运行大模型的默认命令。
 tags: [本地模型, 推理]
 ---
 

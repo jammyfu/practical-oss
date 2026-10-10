@@ -10,6 +10,8 @@ language: C++
 stars: 130658
 stars_at: 2026-10-10
 summary: 用纯 C/C++ 在本机 CPU 和 GPU 上运行量化后的大语言模型。
+trending: yes
+trending_why: 让量化后的大模型在普通 CPU 和 GPU 上运行，是这轮本地推理的基础实现。
 tags: [推理, 本地模型]
 ---
 

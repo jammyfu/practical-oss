@@ -10,6 +10,8 @@ language: C++
 stars: 42053
 stars_at: 2026-10-10
 summary: 嵌在进程里的分析型数据库，直接对本地文件和表格数据跑 SQL。
+trending: yes
+trending_why: 本地用 SQL 分析 CSV 和 Parquet 时，成为 SQLite 之外的新默认。
 tags: [分析, SQL]
 ---
 

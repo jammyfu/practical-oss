@@ -10,6 +10,8 @@ language: TypeScript
 stars: 115876
 stars_at: 2026-10-10
 summary: 自建照片和视频库，在手机上备份，在浏览器里按时间线、人物和地点浏览。
+trending: yes
+trending_why: 这两年自建相册时最常被拿来替代厂商云相册的产品。
 tags: [照片, 自托管]
 ---
 

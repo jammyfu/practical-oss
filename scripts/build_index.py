@@ -51,11 +51,53 @@ def load_entries() -> list[dict]:
     return found
 
 
+def render_row(row: dict) -> str:
+    note = row.get("stars_note", "")
+    stars = f"{row['stars']:,}"
+    if note:
+        stars = f"{stars}（见正文）"
+    name = f"[{row['name']}]({row['path']})"
+    return f"| {name} | {row['summary']} | {row['license']} | {stars} |"
+
+
+def render_trending(categories: list[dict], entries: list[dict]) -> list[str]:
+    names = {item["id"]: item["name"] for item in categories}
+    rows = [entry for entry in entries if entry.get("trending") == "yes"]
+    rows.sort(key=lambda item: (-item["stars"], item["name"].lower()))
+    lines = [
+        "## 最新最热",
+        "",
+        "这一节是横切分类，不代替功能分类。条目仍放在原来的用途目录里，并额外标 `trending: yes`。",
+        "进入标准是大约 2024 年以来成为某类工作的新默认，或关注和实际采用明显跃升。Git、React、PostgreSQL 这类长期默认不因为总星标进入这里。",
+        "",
+    ]
+    if not rows:
+        lines.extend(["这一节还没有条目。", ""])
+        return lines
+    lines.extend(
+        [
+            "| 项目 | 新在哪里 | 功能分类 | 许可 | 星标 |",
+            "| --- | --- | --- | --- | ---: |",
+        ]
+    )
+    for row in rows:
+        why = row.get("trending_why", row["summary"])
+        note = row.get("stars_note", "")
+        stars = f"{row['stars']:,}"
+        if note:
+            stars = f"{stars}（见正文）"
+        name = f"[{row['name']}]({row['path']})"
+        category = names.get(row["category"], row["category"])
+        lines.append(f"| {name} | {why} | {category} | {row['license']} | {stars} |")
+    lines.append("")
+    return lines
+
+
 def render_catalog(categories: list[dict], entries: list[dict]) -> str:
     by_category = {item["id"]: [] for item in categories}
     for entry in entries:
         by_category.setdefault(entry["category"], []).append(entry)
-    lines = []
+    lines = render_trending(categories, entries)
     for category in categories:
         rows = sorted(by_category.get(category["id"], []), key=lambda item: item["name"].lower())
         lines.append(f"## {category['name']}")
@@ -69,14 +111,7 @@ def render_catalog(categories: list[dict], entries: list[dict]) -> str:
         lines.append("| 项目 | 它做什么 | 许可 | 星标 |")
         lines.append("| --- | --- | --- | ---: |")
         for row in rows:
-            note = row.get("stars_note", "")
-            stars = f"{row['stars']:,}"
-            if note:
-                stars = f"{stars}（见正文）"
-            name = f"[{row['name']}]({row['path']})"
-            lines.append(
-                f"| {name} | {row['summary']} | {row['license']} | {stars} |"
-            )
+            lines.append(render_row(row))
         lines.append("")
     lines.append(
         "星标取自 GitHub API，统计日见各条目的 `stars_at`。星标只说明仓库被关注的程度，不代替采用率。PostgreSQL 这类镜像仓库星标偏低，仍然是行业默认选择。"

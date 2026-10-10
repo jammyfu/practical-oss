@@ -2,7 +2,7 @@
   "stars_at": [
     "2026-10-10"
   ],
-  "count": 52,
+  "count": 70,
   "categories": [
     {
       "id": "cli",
@@ -62,6 +62,47 @@
   ],
   "projects": [
     {
+      "name": "ComfyUI",
+      "slug": "comfyui",
+      "category": "ai",
+      "primary_repo": "comfyanonymous/ComfyUI",
+      "url": "https://github.com/comfyanonymous/ComfyUI",
+      "website": "https://www.comfy.org/",
+      "license": "GPL-3.0",
+      "language": "Python",
+      "stars": 136649,
+      "stars_at": "2026-10-10",
+      "summary": "用节点图编排扩散模型的加载、采样和后处理，在本地生成图像等内容。",
+      "trending": "yes",
+      "trending_why": "本地图像生成从写死的脚本变成可保存的节点工作流之后，它成了这条路径上的常见界面。",
+      "tags": [
+        "图像生成",
+        "工作流"
+      ],
+      "path": "entries/ai/comfyui.md"
+    },
+    {
+      "name": "Dify",
+      "slug": "dify",
+      "category": "ai",
+      "primary_repo": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "website": "https://dify.ai",
+      "license": "修改版 Apache-2.0（含多租户与品牌附加条款，非 OSI）",
+      "language": "TypeScript",
+      "stars": 158031,
+      "stars_at": "2026-10-10",
+      "summary": "用可视化工作流、知识库和模型接入，把大模型做成可调用的应用。",
+      "trending": "yes",
+      "trending_why": "团队要把知识库和工作流做成可上线的模型应用时，常把它当作自托管搭建台，但许可不是 Apache-2.0。",
+      "tags": [
+        "工作流",
+        "应用",
+        "许可"
+      ],
+      "path": "entries/ai/dify.md"
+    },
+    {
       "name": "llama.cpp",
       "slug": "llama-cpp",
       "category": "ai",
@@ -73,6 +114,8 @@
       "stars": 130658,
       "stars_at": "2026-10-10",
       "summary": "用纯 C/C++ 在本机 CPU 和 GPU 上运行量化后的大语言模型。",
+      "trending": "yes",
+      "trending_why": "让量化后的大模型在普通 CPU 和 GPU 上运行，是这轮本地推理的基础实现。",
       "tags": [
         "推理",
         "本地模型"
@@ -91,6 +134,8 @@
       "stars": 182543,
       "stars_at": "2026-10-10",
       "summary": "用一条命令下载并运行本地大模型，再通过本机接口供其他程序调用。",
+      "trending": "yes",
+      "trending_why": "2023 年后成为在自己电脑上运行大模型的默认命令。",
       "tags": [
         "本地模型",
         "推理"
@@ -133,6 +178,26 @@
         "训练"
       ],
       "path": "entries/ai/transformers.md"
+    },
+    {
+      "name": "vLLM",
+      "slug": "vllm",
+      "category": "ai",
+      "primary_repo": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "website": "https://vllm.ai",
+      "license": "Apache-2.0",
+      "language": "Python",
+      "stars": 93470,
+      "stars_at": "2026-10-10",
+      "summary": "在 GPU 上高吞吐地服务大语言模型，并对外提供可接入的推理接口。",
+      "trending": "yes",
+      "trending_why": "自建大模型服务时，它把吞吐和显存利用率做成了可部署的推理引擎，而不只是一次对话脚本。",
+      "tags": [
+        "推理",
+        "服务"
+      ],
+      "path": "entries/ai/vllm.md"
     },
     {
       "name": "Caddy",
@@ -297,6 +362,26 @@
       "path": "entries/cli/fzf.md"
     },
     {
+      "name": "Ghostty",
+      "slug": "ghostty",
+      "category": "cli",
+      "primary_repo": "ghostty-org/ghostty",
+      "url": "https://github.com/ghostty-org/ghostty",
+      "website": "https://ghostty.org/",
+      "license": "MIT",
+      "language": "Zig",
+      "stars": 62010,
+      "stars_at": "2026-10-10",
+      "summary": "用 GPU 绘制终端网格的模拟器，窗口里跑的仍是原来的 shell。",
+      "trending": "yes",
+      "trending_why": "2024 年末以 1.0 公开，在 macOS 和 Linux 上提供新的原生 GPU 终端窗口，换的不是 shell。",
+      "tags": [
+        "终端",
+        "GPU"
+      ],
+      "path": "entries/cli/ghostty.md"
+    },
+    {
       "name": "Git",
       "slug": "git",
       "category": "cli",
@@ -371,6 +456,26 @@
       "path": "entries/cli/ripgrep.md"
     },
     {
+      "name": "Ruff",
+      "slug": "ruff",
+      "category": "cli",
+      "primary_repo": "astral-sh/ruff",
+      "url": "https://github.com/astral-sh/ruff",
+      "website": "https://docs.astral.sh/ruff/",
+      "license": "MIT",
+      "language": "Rust",
+      "stars": 49971,
+      "stars_at": "2026-10-10",
+      "summary": "用一个程序检查并格式化 Python，覆盖原来要靠多件 lint 工具才做的事。",
+      "trending": "yes",
+      "trending_why": "同一个 Rust 程序同时做 lint 和格式化，用来换掉 Flake8、isort 和 Black 的组合。",
+      "tags": [
+        "Python",
+        "代码检查"
+      ],
+      "path": "entries/cli/ruff.md"
+    },
+    {
       "name": "tmux",
       "slug": "tmux",
       "category": "cli",
@@ -389,6 +494,26 @@
       "path": "entries/cli/tmux.md"
     },
     {
+      "name": "ClickHouse",
+      "slug": "clickhouse",
+      "category": "data",
+      "primary_repo": "ClickHouse/ClickHouse",
+      "url": "https://github.com/ClickHouse/ClickHouse",
+      "website": "https://clickhouse.com/",
+      "license": "Apache-2.0",
+      "language": "C++",
+      "stars": 50318,
+      "stars_at": "2026-10-10",
+      "summary": "面向扫描和聚合的列式分析数据库，用来做日志、指标和实时报表。",
+      "trending": "yes",
+      "trending_why": "日志和事件分析从行式库迁出时，它是生产里被选得最多的开源列式库之一。",
+      "tags": [
+        "分析",
+        "列式数据库"
+      ],
+      "path": "entries/data/clickhouse.md"
+    },
+    {
       "name": "DuckDB",
       "slug": "duckdb",
       "category": "data",
@@ -400,6 +525,8 @@
       "stars": 42053,
       "stars_at": "2026-10-10",
       "summary": "嵌在进程里的分析型数据库，直接对本地文件和表格数据跑 SQL。",
+      "trending": "yes",
+      "trending_why": "本地用 SQL 分析 CSV 和 Parquet 时，成为 SQLite 之外的新默认。",
       "tags": [
         "分析",
         "SQL"
@@ -442,6 +569,26 @@
         "流"
       ],
       "path": "entries/data/kafka.md"
+    },
+    {
+      "name": "Polars",
+      "slug": "polars",
+      "category": "data",
+      "primary_repo": "pola-rs/polars",
+      "url": "https://github.com/pola-rs/polars",
+      "website": "https://docs.pola.rs/",
+      "license": "MIT",
+      "language": "Rust",
+      "stars": 40080,
+      "stars_at": "2026-10-10",
+      "summary": "用列式查询引擎在进程内变换和聚合表格，常用来替代逐行的 DataFrame 写法。",
+      "trending": "yes",
+      "trending_why": "本地和管道里处理中等规模表格时，它已成为相对 pandas 的新默认对比。",
+      "tags": [
+        "DataFrame",
+        "分析"
+      ],
+      "path": "entries/data/polars.md"
     },
     {
       "name": "PostgreSQL",
@@ -554,6 +701,26 @@
       "path": "entries/editor/vscode.md"
     },
     {
+      "name": "Zed",
+      "slug": "zed",
+      "category": "editor",
+      "primary_repo": "zed-industries/zed",
+      "url": "https://github.com/zed-industries/zed",
+      "website": "https://zed.dev/",
+      "license": "GPL-3.0-or-later（标明的组件为 Apache-2.0）",
+      "language": "Rust",
+      "stars": 91509,
+      "stars_at": "2026-10-10",
+      "summary": "用原生界面写代码，并在同一编辑器里和别人实时改同一块缓冲区。",
+      "trending": "yes",
+      "trending_why": "2024 年开源后，多人协作做进编辑器本身，而不是在网页壳上再装一个协作插件。",
+      "tags": [
+        "编辑器",
+        "协作"
+      ],
+      "path": "entries/editor/zed.md"
+    },
+    {
       "name": "Ansible",
       "slug": "ansible",
       "category": "infra",
@@ -643,6 +810,26 @@
         "开源分支"
       ],
       "path": "entries/infra/opentofu.md"
+    },
+    {
+      "name": "Bun",
+      "slug": "bun",
+      "category": "lang",
+      "primary_repo": "oven-sh/bun",
+      "url": "https://github.com/oven-sh/bun",
+      "website": "https://bun.com/",
+      "license": "MIT（Bun 本体）；发行二进制静态链接 LGPL-2 的 JavaScriptCore",
+      "language": "Rust",
+      "stars": 96170,
+      "stars_at": "2026-10-10",
+      "summary": "运行、打包并测试 JavaScript，同时管理依赖，少装一整套分开的工具。",
+      "trending": "yes",
+      "trending_why": "把运行时、打包、测试和包管理放进同一个程序，作为 Node 工具链之外的新入口。",
+      "tags": [
+        "JavaScript",
+        "运行时"
+      ],
+      "path": "entries/lang/bun.md"
     },
     {
       "name": "CPython",
@@ -736,6 +923,26 @@
       "path": "entries/lang/typescript.md"
     },
     {
+      "name": "uv",
+      "slug": "uv",
+      "category": "lang",
+      "primary_repo": "astral-sh/uv",
+      "url": "https://github.com/astral-sh/uv",
+      "website": "https://docs.astral.sh/uv/",
+      "license": "Apache-2.0 OR MIT",
+      "language": "Rust",
+      "stars": 90557,
+      "stars_at": "2026-10-10",
+      "summary": "用一个工具安装 Python 包、管理虚拟环境，并安装要用的 Python 版本。",
+      "trending": "yes",
+      "trending_why": "把装包、虚拟环境和 Python 版本收进同一个程序，正在取代 pip 加 venv 的旧默认。",
+      "tags": [
+        "Python",
+        "包管理"
+      ],
+      "path": "entries/lang/uv.md"
+    },
+    {
       "name": "Blender",
       "slug": "blender",
       "category": "media",
@@ -772,6 +979,26 @@
         "修图"
       ],
       "path": "entries/media/gimp.md"
+    },
+    {
+      "name": "Jellyfin",
+      "slug": "jellyfin",
+      "category": "media",
+      "primary_repo": "jellyfin/jellyfin",
+      "url": "https://github.com/jellyfin/jellyfin",
+      "website": "https://jellyfin.org/",
+      "license": "GPL-2.0",
+      "language": "C#",
+      "stars": 57951,
+      "stars_at": "2026-10-10",
+      "summary": "把自己的电影、剧集和音乐整理成可在浏览器和电视上播放的媒体服务。",
+      "trending": "yes",
+      "trending_why": "不想把片库和观看记录交给厂商账号时，它是最常被拿来自建的自由软件媒体服务器。",
+      "tags": [
+        "媒体库",
+        "自托管"
+      ],
+      "path": "entries/media/jellyfin.md"
     },
     {
       "name": "OBS Studio",
@@ -846,6 +1073,26 @@
       "path": "entries/observe/trivy.md"
     },
     {
+      "name": "Home Assistant",
+      "slug": "home-assistant",
+      "category": "selfhost",
+      "primary_repo": "home-assistant/core",
+      "url": "https://github.com/home-assistant/core",
+      "website": "https://www.home-assistant.io/",
+      "license": "Apache-2.0",
+      "language": "Python",
+      "stars": 91344,
+      "stars_at": "2026-10-10",
+      "summary": "在自己的机器上把灯、传感器和开关接成可本地运行的家庭自动化。",
+      "trending": "yes",
+      "trending_why": "厂商云各自为政之后，本地优先的家庭自动化几乎都围绕它来接设备和场景。",
+      "tags": [
+        "智能家居",
+        "自动化"
+      ],
+      "path": "entries/selfhost/home-assistant.md"
+    },
+    {
       "name": "Immich",
       "slug": "immich",
       "category": "selfhost",
@@ -857,11 +1104,34 @@
       "stars": 115876,
       "stars_at": "2026-10-10",
       "summary": "自建照片和视频库，在手机上备份，在浏览器里按时间线、人物和地点浏览。",
+      "trending": "yes",
+      "trending_why": "这两年自建相册时最常被拿来替代厂商云相册的产品。",
       "tags": [
         "照片",
         "自托管"
       ],
       "path": "entries/selfhost/immich.md"
+    },
+    {
+      "name": "n8n",
+      "slug": "n8n",
+      "category": "selfhost",
+      "primary_repo": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "website": "https://n8n.io/",
+      "license": "Sustainable Use License",
+      "language": "TypeScript",
+      "stars": 206845,
+      "stars_at": "2026-10-10",
+      "summary": "用可视化节点把接口、定时任务和常见应用串成可自托管的工作流。",
+      "trending": "yes",
+      "trending_why": "要把 SaaS、内部接口和模型调用接成一条自动化时，它是目前最常被拿来自托管的可视化产品。",
+      "tags": [
+        "工作流",
+        "自动化",
+        "自托管"
+      ],
+      "path": "entries/selfhost/n8n.md"
     },
     {
       "name": "Nextcloud",
@@ -882,6 +1152,27 @@
       "path": "entries/selfhost/nextcloud.md"
     },
     {
+      "name": "Open WebUI",
+      "slug": "open-webui",
+      "category": "selfhost",
+      "primary_repo": "open-webui/open-webui",
+      "url": "https://github.com/open-webui/open-webui",
+      "website": "https://openwebui.com",
+      "license": "Open WebUI License（源码可用，非 OSI）",
+      "language": "Python",
+      "stars": 154158,
+      "stars_at": "2026-10-10",
+      "summary": "自托管的网页聊天界面，用来连接本地或远程的模型接口。",
+      "trending": "yes",
+      "trending_why": "给 Ollama 或兼容接口补一个可登录的聊天入口时，它是目前被广泛部署的界面，但现行许可已不是 MIT。",
+      "tags": [
+        "聊天界面",
+        "自托管",
+        "许可"
+      ],
+      "path": "entries/selfhost/open-webui.md"
+    },
+    {
       "name": "Paperless-ngx",
       "slug": "paperless-ngx",
       "category": "selfhost",
@@ -898,6 +1189,86 @@
         "归档"
       ],
       "path": "entries/selfhost/paperless-ngx.md"
+    },
+    {
+      "name": "PocketBase",
+      "slug": "pocketbase",
+      "category": "selfhost",
+      "primary_repo": "pocketbase/pocketbase",
+      "url": "https://github.com/pocketbase/pocketbase",
+      "website": "https://pocketbase.io/",
+      "license": "MIT",
+      "language": "Go",
+      "stars": 61338,
+      "stars_at": "2026-10-10",
+      "summary": "一个可执行文件里带上数据库、用户鉴权和文件接口，给小应用当后端。",
+      "trending": "yes",
+      "trending_why": "小产品不想自建一整套后端时，单文件加 SQLite 成了托管 BaaS 之外的常见选择。",
+      "tags": [
+        "后端",
+        "自托管"
+      ],
+      "path": "entries/selfhost/pocketbase.md"
+    },
+    {
+      "name": "Astro",
+      "slug": "astro",
+      "category": "web",
+      "primary_repo": "withastro/astro",
+      "url": "https://github.com/withastro/astro",
+      "website": "https://astro.build/",
+      "license": "MIT",
+      "language": "TypeScript",
+      "stars": 63141,
+      "stars_at": "2026-10-10",
+      "summary": "为文档、博客和营销站默认生成静态 HTML，只在交互组件上加载脚本。",
+      "trending": "yes",
+      "trending_why": "2024 年的 5.0 补上内容层和服务端岛屿，静态页里可以只把需要个性化的那一块交给服务器。",
+      "tags": [
+        "框架",
+        "内容站"
+      ],
+      "path": "entries/web/astro.md"
+    },
+    {
+      "name": "Biome",
+      "slug": "biome",
+      "category": "web",
+      "primary_repo": "biomejs/biome",
+      "url": "https://github.com/biomejs/biome",
+      "website": "https://biomejs.dev/",
+      "license": "Apache-2.0 OR MIT",
+      "language": "Rust",
+      "stars": 25915,
+      "stars_at": "2026-10-10",
+      "summary": "用同一个工具格式化并检查 JavaScript 和 TypeScript，命令行和编辑器都能调用。",
+      "trending": "yes",
+      "trending_why": "格式化和 lint 合成一个工具，减少前端项目同时维护 Prettier 和 ESLint 的做法。",
+      "tags": [
+        "JavaScript",
+        "格式化"
+      ],
+      "path": "entries/web/biome.md"
+    },
+    {
+      "name": "htmx",
+      "slug": "htmx",
+      "category": "web",
+      "primary_repo": "bigskysoftware/htmx",
+      "url": "https://github.com/bigskysoftware/htmx",
+      "website": "https://htmx.org/",
+      "license": "0BSD",
+      "language": "JavaScript",
+      "stars": 49545,
+      "stars_at": "2026-10-10",
+      "summary": "用 HTML 属性发起请求，把服务端返回的片段换进页面的一块，而不刷新整页。",
+      "trending": "yes",
+      "trending_why": "2024 年的 2.0 去掉旧浏览器包袱并把扩展移出核心，成为服务端仍返回 HTML 时对照单页框架的常用库。",
+      "tags": [
+        "HTML",
+        "局部更新"
+      ],
+      "path": "entries/web/htmx.md"
     },
     {
       "name": "Next.js",

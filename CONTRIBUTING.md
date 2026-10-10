@@ -39,6 +39,15 @@ tags: [短标签, 另一个]
 
 `summary` 保持一行。需要补充星标口径时，加一行 `stars_note: "..."`。
 
+近两年才成为新默认、或关注和采用明显跃升的项目，再加两行：
+
+```yaml
+trending: yes
+trending_why: 一句话说明新在哪里，不要只重复星标
+```
+
+`trending: yes` 的条目会同时出现在 README 最前面的「最新最热」，以及自己的功能分类里。不要为它另建目录。Git、React、PostgreSQL 这类长期默认不标 `trending`。
+
 正文固定五节，标题不要改：
 
 1. `## 它解决什么问题`
