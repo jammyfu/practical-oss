@@ -3,6 +3,8 @@
     "2026-10-10"
   ],
   "count": 70,
+  "history_count": 48,
+  "current_count": 22,
   "categories": [
     {
       "id": "cli",
@@ -73,7 +75,7 @@
       "stars": 136649,
       "stars_at": "2026-10-10",
       "summary": "用节点图编排扩散模型的加载、采样和后处理，在本地生成图像等内容。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "本地图像生成从写死的脚本变成可保存的节点工作流之后，它成了这条路径上的常见界面。",
       "tags": [
         "图像生成",
@@ -93,7 +95,7 @@
       "stars": 158031,
       "stars_at": "2026-10-10",
       "summary": "用可视化工作流、知识库和模型接入，把大模型做成可调用的应用。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "团队要把知识库和工作流做成可上线的模型应用时，常把它当作自托管搭建台，但许可不是 Apache-2.0。",
       "tags": [
         "工作流",
@@ -114,7 +116,7 @@
       "stars": 130658,
       "stars_at": "2026-10-10",
       "summary": "用纯 C/C++ 在本机 CPU 和 GPU 上运行量化后的大语言模型。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "让量化后的大模型在普通 CPU 和 GPU 上运行，是这轮本地推理的基础实现。",
       "tags": [
         "推理",
@@ -134,7 +136,7 @@
       "stars": 182543,
       "stars_at": "2026-10-10",
       "summary": "用一条命令下载并运行本地大模型，再通过本机接口供其他程序调用。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "2023 年后成为在自己电脑上运行大模型的默认命令。",
       "tags": [
         "本地模型",
@@ -159,7 +161,8 @@
         "训练",
         "张量"
       ],
-      "path": "entries/ai/pytorch.md"
+      "path": "entries/ai/pytorch.md",
+      "trending": false
     },
     {
       "name": "Transformers",
@@ -177,7 +180,8 @@
         "模型",
         "训练"
       ],
-      "path": "entries/ai/transformers.md"
+      "path": "entries/ai/transformers.md",
+      "trending": false
     },
     {
       "name": "vLLM",
@@ -191,7 +195,7 @@
       "stars": 93470,
       "stars_at": "2026-10-10",
       "summary": "在 GPU 上高吞吐地服务大语言模型，并对外提供可接入的推理接口。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "自建大模型服务时，它把吞吐和显存利用率做成了可部署的推理引擎，而不只是一次对话脚本。",
       "tags": [
         "推理",
@@ -215,7 +219,8 @@
         "代理",
         "HTTPS"
       ],
-      "path": "entries/backend/caddy.md"
+      "path": "entries/backend/caddy.md",
+      "trending": false
     },
     {
       "name": "Django",
@@ -233,7 +238,8 @@
         "Web",
         "Python"
       ],
-      "path": "entries/backend/django.md"
+      "path": "entries/backend/django.md",
+      "trending": false
     },
     {
       "name": "FastAPI",
@@ -251,7 +257,8 @@
         "API",
         "Python"
       ],
-      "path": "entries/backend/fastapi.md"
+      "path": "entries/backend/fastapi.md",
+      "trending": false
     },
     {
       "name": "Gin",
@@ -269,7 +276,8 @@
         "API",
         "Go"
       ],
-      "path": "entries/backend/gin.md"
+      "path": "entries/backend/gin.md",
+      "trending": false
     },
     {
       "name": "nginx",
@@ -287,7 +295,8 @@
         "代理",
         "Web 服务器"
       ],
-      "path": "entries/backend/nginx.md"
+      "path": "entries/backend/nginx.md",
+      "trending": false
     },
     {
       "name": "Spring Boot",
@@ -305,7 +314,8 @@
         "Java",
         "服务"
       ],
-      "path": "entries/backend/spring-boot.md"
+      "path": "entries/backend/spring-boot.md",
+      "trending": false
     },
     {
       "name": "bat",
@@ -323,7 +333,8 @@
         "阅读",
         "命令行"
       ],
-      "path": "entries/cli/bat.md"
+      "path": "entries/cli/bat.md",
+      "trending": false
     },
     {
       "name": "fd",
@@ -341,7 +352,8 @@
         "搜索",
         "命令行"
       ],
-      "path": "entries/cli/fd.md"
+      "path": "entries/cli/fd.md",
+      "trending": false
     },
     {
       "name": "fzf",
@@ -359,7 +371,8 @@
         "筛选",
         "命令行"
       ],
-      "path": "entries/cli/fzf.md"
+      "path": "entries/cli/fzf.md",
+      "trending": false
     },
     {
       "name": "Ghostty",
@@ -373,7 +386,7 @@
       "stars": 62010,
       "stars_at": "2026-10-10",
       "summary": "用 GPU 绘制终端网格的模拟器，窗口里跑的仍是原来的 shell。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "2024 年末以 1.0 公开，在 macOS 和 Linux 上提供新的原生 GPU 终端窗口，换的不是 shell。",
       "tags": [
         "终端",
@@ -398,7 +411,8 @@
         "版本控制",
         "协作"
       ],
-      "path": "entries/cli/git.md"
+      "path": "entries/cli/git.md",
+      "trending": false
     },
     {
       "name": "jq",
@@ -417,7 +431,8 @@
         "JSON",
         "命令行"
       ],
-      "path": "entries/cli/jq.md"
+      "path": "entries/cli/jq.md",
+      "trending": false
     },
     {
       "name": "lazygit",
@@ -435,7 +450,8 @@
         "Git",
         "终端界面"
       ],
-      "path": "entries/cli/lazygit.md"
+      "path": "entries/cli/lazygit.md",
+      "trending": false
     },
     {
       "name": "ripgrep",
@@ -453,7 +469,8 @@
         "搜索",
         "命令行"
       ],
-      "path": "entries/cli/ripgrep.md"
+      "path": "entries/cli/ripgrep.md",
+      "trending": false
     },
     {
       "name": "Ruff",
@@ -467,7 +484,7 @@
       "stars": 49971,
       "stars_at": "2026-10-10",
       "summary": "用一个程序检查并格式化 Python，覆盖原来要靠多件 lint 工具才做的事。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "同一个 Rust 程序同时做 lint 和格式化，用来换掉 Flake8、isort 和 Black 的组合。",
       "tags": [
         "Python",
@@ -491,7 +508,8 @@
         "终端",
         "会话"
       ],
-      "path": "entries/cli/tmux.md"
+      "path": "entries/cli/tmux.md",
+      "trending": false
     },
     {
       "name": "ClickHouse",
@@ -505,7 +523,7 @@
       "stars": 50318,
       "stars_at": "2026-10-10",
       "summary": "面向扫描和聚合的列式分析数据库，用来做日志、指标和实时报表。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "日志和事件分析从行式库迁出时，它是生产里被选得最多的开源列式库之一。",
       "tags": [
         "分析",
@@ -525,7 +543,7 @@
       "stars": 42053,
       "stars_at": "2026-10-10",
       "summary": "嵌在进程里的分析型数据库，直接对本地文件和表格数据跑 SQL。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "本地用 SQL 分析 CSV 和 Parquet 时，成为 SQLite 之外的新默认。",
       "tags": [
         "分析",
@@ -550,7 +568,8 @@
         "笔记本",
         "分析"
       ],
-      "path": "entries/data/jupyterlab.md"
+      "path": "entries/data/jupyterlab.md",
+      "trending": false
     },
     {
       "name": "Apache Kafka",
@@ -568,7 +587,8 @@
         "事件",
         "流"
       ],
-      "path": "entries/data/kafka.md"
+      "path": "entries/data/kafka.md",
+      "trending": false
     },
     {
       "name": "Polars",
@@ -582,7 +602,7 @@
       "stars": 40080,
       "stars_at": "2026-10-10",
       "summary": "用列式查询引擎在进程内变换和聚合表格，常用来替代逐行的 DataFrame 写法。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "本地和管道里处理中等规模表格时，它已成为相对 pandas 的新默认对比。",
       "tags": [
         "DataFrame",
@@ -607,7 +627,8 @@
         "数据库",
         "SQL"
       ],
-      "path": "entries/data/postgresql.md"
+      "path": "entries/data/postgresql.md",
+      "trending": false
     },
     {
       "name": "Redis",
@@ -625,7 +646,8 @@
         "缓存",
         "许可变更"
       ],
-      "path": "entries/data/redis.md"
+      "path": "entries/data/redis.md",
+      "trending": false
     },
     {
       "name": "SQLite",
@@ -644,7 +666,8 @@
         "数据库",
         "嵌入式"
       ],
-      "path": "entries/data/sqlite.md"
+      "path": "entries/data/sqlite.md",
+      "trending": false
     },
     {
       "name": "Valkey",
@@ -662,7 +685,8 @@
         "缓存",
         "开源分支"
       ],
-      "path": "entries/data/valkey.md"
+      "path": "entries/data/valkey.md",
+      "trending": false
     },
     {
       "name": "Neovim",
@@ -680,7 +704,8 @@
         "编辑器",
         "Vim"
       ],
-      "path": "entries/editor/neovim.md"
+      "path": "entries/editor/neovim.md",
+      "trending": false
     },
     {
       "name": "Visual Studio Code",
@@ -698,7 +723,8 @@
         "编辑器",
         "扩展"
       ],
-      "path": "entries/editor/vscode.md"
+      "path": "entries/editor/vscode.md",
+      "trending": false
     },
     {
       "name": "Zed",
@@ -712,7 +738,7 @@
       "stars": 91509,
       "stars_at": "2026-10-10",
       "summary": "用原生界面写代码，并在同一编辑器里和别人实时改同一块缓冲区。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "2024 年开源后，多人协作做进编辑器本身，而不是在网页壳上再装一个协作插件。",
       "tags": [
         "编辑器",
@@ -736,7 +762,8 @@
         "配置",
         "自动化"
       ],
-      "path": "entries/infra/ansible.md"
+      "path": "entries/infra/ansible.md",
+      "trending": false
     },
     {
       "name": "Docker",
@@ -755,7 +782,8 @@
         "容器",
         "部署"
       ],
-      "path": "entries/infra/docker.md"
+      "path": "entries/infra/docker.md",
+      "trending": false
     },
     {
       "name": "Helm",
@@ -773,7 +801,8 @@
         "Kubernetes",
         "发布"
       ],
-      "path": "entries/infra/helm.md"
+      "path": "entries/infra/helm.md",
+      "trending": false
     },
     {
       "name": "Kubernetes",
@@ -791,7 +820,8 @@
         "编排",
         "集群"
       ],
-      "path": "entries/infra/kubernetes.md"
+      "path": "entries/infra/kubernetes.md",
+      "trending": false
     },
     {
       "name": "OpenTofu",
@@ -809,7 +839,8 @@
         "基础设施即代码",
         "开源分支"
       ],
-      "path": "entries/infra/opentofu.md"
+      "path": "entries/infra/opentofu.md",
+      "trending": false
     },
     {
       "name": "Bun",
@@ -823,7 +854,7 @@
       "stars": 96170,
       "stars_at": "2026-10-10",
       "summary": "运行、打包并测试 JavaScript，同时管理依赖，少装一整套分开的工具。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "把运行时、打包、测试和包管理放进同一个程序，作为 Node 工具链之外的新入口。",
       "tags": [
         "JavaScript",
@@ -847,7 +878,8 @@
         "Python",
         "运行时"
       ],
-      "path": "entries/lang/cpython.md"
+      "path": "entries/lang/cpython.md",
+      "trending": false
     },
     {
       "name": "Go",
@@ -865,7 +897,8 @@
         "语言",
         "基础设施"
       ],
-      "path": "entries/lang/go.md"
+      "path": "entries/lang/go.md",
+      "trending": false
     },
     {
       "name": "Node.js",
@@ -883,7 +916,8 @@
         "JavaScript",
         "运行时"
       ],
-      "path": "entries/lang/node.md"
+      "path": "entries/lang/node.md",
+      "trending": false
     },
     {
       "name": "Rust",
@@ -901,7 +935,8 @@
         "语言",
         "系统编程"
       ],
-      "path": "entries/lang/rust.md"
+      "path": "entries/lang/rust.md",
+      "trending": false
     },
     {
       "name": "TypeScript",
@@ -920,7 +955,8 @@
         "JavaScript",
         "类型"
       ],
-      "path": "entries/lang/typescript.md"
+      "path": "entries/lang/typescript.md",
+      "trending": false
     },
     {
       "name": "uv",
@@ -934,7 +970,7 @@
       "stars": 90557,
       "stars_at": "2026-10-10",
       "summary": "用一个工具安装 Python 包、管理虚拟环境，并安装要用的 Python 版本。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "把装包、虚拟环境和 Python 版本收进同一个程序，正在取代 pip 加 venv 的旧默认。",
       "tags": [
         "Python",
@@ -959,7 +995,8 @@
         "三维",
         "创作"
       ],
-      "path": "entries/media/blender.md"
+      "path": "entries/media/blender.md",
+      "trending": false
     },
     {
       "name": "GIMP",
@@ -978,7 +1015,8 @@
         "图像",
         "修图"
       ],
-      "path": "entries/media/gimp.md"
+      "path": "entries/media/gimp.md",
+      "trending": false
     },
     {
       "name": "Jellyfin",
@@ -992,7 +1030,7 @@
       "stars": 57951,
       "stars_at": "2026-10-10",
       "summary": "把自己的电影、剧集和音乐整理成可在浏览器和电视上播放的媒体服务。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "不想把片库和观看记录交给厂商账号时，它是最常被拿来自建的自由软件媒体服务器。",
       "tags": [
         "媒体库",
@@ -1016,7 +1054,8 @@
         "直播",
         "录制"
       ],
-      "path": "entries/media/obs-studio.md"
+      "path": "entries/media/obs-studio.md",
+      "trending": false
     },
     {
       "name": "Grafana",
@@ -1034,7 +1073,8 @@
         "可视化",
         "监控"
       ],
-      "path": "entries/observe/grafana.md"
+      "path": "entries/observe/grafana.md",
+      "trending": false
     },
     {
       "name": "Prometheus",
@@ -1052,7 +1092,8 @@
         "监控",
         "指标"
       ],
-      "path": "entries/observe/prometheus.md"
+      "path": "entries/observe/prometheus.md",
+      "trending": false
     },
     {
       "name": "Trivy",
@@ -1070,7 +1111,8 @@
         "安全",
         "扫描"
       ],
-      "path": "entries/observe/trivy.md"
+      "path": "entries/observe/trivy.md",
+      "trending": false
     },
     {
       "name": "Home Assistant",
@@ -1084,7 +1126,7 @@
       "stars": 91344,
       "stars_at": "2026-10-10",
       "summary": "在自己的机器上把灯、传感器和开关接成可本地运行的家庭自动化。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "厂商云各自为政之后，本地优先的家庭自动化几乎都围绕它来接设备和场景。",
       "tags": [
         "智能家居",
@@ -1104,7 +1146,7 @@
       "stars": 115876,
       "stars_at": "2026-10-10",
       "summary": "自建照片和视频库，在手机上备份，在浏览器里按时间线、人物和地点浏览。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "这两年自建相册时最常被拿来替代厂商云相册的产品。",
       "tags": [
         "照片",
@@ -1124,7 +1166,7 @@
       "stars": 206845,
       "stars_at": "2026-10-10",
       "summary": "用可视化节点把接口、定时任务和常见应用串成可自托管的工作流。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "要把 SaaS、内部接口和模型调用接成一条自动化时，它是目前最常被拿来自托管的可视化产品。",
       "tags": [
         "工作流",
@@ -1149,7 +1191,8 @@
         "文件同步",
         "协作"
       ],
-      "path": "entries/selfhost/nextcloud.md"
+      "path": "entries/selfhost/nextcloud.md",
+      "trending": false
     },
     {
       "name": "Open WebUI",
@@ -1163,7 +1206,7 @@
       "stars": 154158,
       "stars_at": "2026-10-10",
       "summary": "自托管的网页聊天界面，用来连接本地或远程的模型接口。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "给 Ollama 或兼容接口补一个可登录的聊天入口时，它是目前被广泛部署的界面，但现行许可已不是 MIT。",
       "tags": [
         "聊天界面",
@@ -1188,7 +1231,8 @@
         "文档",
         "归档"
       ],
-      "path": "entries/selfhost/paperless-ngx.md"
+      "path": "entries/selfhost/paperless-ngx.md",
+      "trending": false
     },
     {
       "name": "PocketBase",
@@ -1202,7 +1246,7 @@
       "stars": 61338,
       "stars_at": "2026-10-10",
       "summary": "一个可执行文件里带上数据库、用户鉴权和文件接口，给小应用当后端。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "小产品不想自建一整套后端时，单文件加 SQLite 成了托管 BaaS 之外的常见选择。",
       "tags": [
         "后端",
@@ -1222,7 +1266,7 @@
       "stars": 63141,
       "stars_at": "2026-10-10",
       "summary": "为文档、博客和营销站默认生成静态 HTML，只在交互组件上加载脚本。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "2024 年的 5.0 补上内容层和服务端岛屿，静态页里可以只把需要个性化的那一块交给服务器。",
       "tags": [
         "框架",
@@ -1242,7 +1286,7 @@
       "stars": 25915,
       "stars_at": "2026-10-10",
       "summary": "用同一个工具格式化并检查 JavaScript 和 TypeScript，命令行和编辑器都能调用。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "格式化和 lint 合成一个工具，减少前端项目同时维护 Prettier 和 ESLint 的做法。",
       "tags": [
         "JavaScript",
@@ -1262,7 +1306,7 @@
       "stars": 49545,
       "stars_at": "2026-10-10",
       "summary": "用 HTML 属性发起请求，把服务端返回的片段换进页面的一块，而不刷新整页。",
-      "trending": "yes",
+      "trending": true,
       "trending_why": "2024 年的 2.0 去掉旧浏览器包袱并把扩展移出核心，成为服务端仍返回 HTML 时对照单页框架的常用库。",
       "tags": [
         "HTML",
@@ -1286,7 +1330,8 @@
         "React",
         "框架"
       ],
-      "path": "entries/web/nextjs.md"
+      "path": "entries/web/nextjs.md",
+      "trending": false
     },
     {
       "name": "React",
@@ -1304,7 +1349,8 @@
         "界面",
         "组件"
       ],
-      "path": "entries/web/react.md"
+      "path": "entries/web/react.md",
+      "trending": false
     },
     {
       "name": "Svelte",
@@ -1322,7 +1368,8 @@
         "界面",
         "编译"
       ],
-      "path": "entries/web/svelte.md"
+      "path": "entries/web/svelte.md",
+      "trending": false
     },
     {
       "name": "Tailwind CSS",
@@ -1340,7 +1387,8 @@
         "CSS",
         "界面"
       ],
-      "path": "entries/web/tailwindcss.md"
+      "path": "entries/web/tailwindcss.md",
+      "trending": false
     },
     {
       "name": "Vite",
@@ -1358,7 +1406,8 @@
         "构建",
         "前端"
       ],
-      "path": "entries/web/vite.md"
+      "path": "entries/web/vite.md",
+      "trending": false
     },
     {
       "name": "Vue",
@@ -1377,7 +1426,8 @@
         "界面",
         "组件"
       ],
-      "path": "entries/web/vue.md"
+      "path": "entries/web/vue.md",
+      "trending": false
     }
   ]
 }
