@@ -7,7 +7,7 @@
       "title": "日",
       "meaning": "过去一天",
       "lead": "GitHub 趋势页的日榜。新增星标是页面上的 stars today。",
-      "note": "顺序跟抓取当天的趋势页一致，没有按新增星标重排。写着「未标明」的，是接口没有给出 SPDX 许可证。",
+      "note": "写着「未标明」的，是接口没有给出 SPDX 许可证。抓取日就是本目录的日期。",
       "repos": [
         {
           "repo": "morluto/rea",
@@ -93,7 +93,7 @@
       "title": "周",
       "meaning": "过去一周",
       "lead": "GitHub 趋势页的周榜。新增星标是页面上的 stars this week。",
-      "note": "顺序跟抓取当天的趋势页一致，没有按新增星标重排。写着「未标明」的，是接口没有给出 SPDX 许可证。",
+      "note": "写着「未标明」的，是接口没有给出 SPDX 许可证。抓取日就是本目录的日期。",
       "repos": [
         {
           "repo": "boykopovar/AnyPS5",
@@ -179,7 +179,7 @@
       "title": "月",
       "meaning": "过去一个月",
       "lead": "GitHub 趋势页的月榜。新增星标是页面上的 stars this month。",
-      "note": "顺序跟抓取当天的趋势页一致，没有按新增星标重排。写着「未标明」的，是接口没有给出 SPDX 许可证。",
+      "note": "写着「未标明」的，是接口没有给出 SPDX 许可证。抓取日就是本目录的日期。",
       "repos": [
         {
           "repo": "alibaba/open-code-review",

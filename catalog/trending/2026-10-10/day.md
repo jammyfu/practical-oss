@@ -1,9 +1,10 @@
 # 当前热度 · 日
 
+抓取日 2026-10-10。
 GitHub 趋势页的日榜。新增星标是页面上的 stars today。
 表内按这一档新增星标从高到低排。
 
-返回 [当前热度最高](当前热度最高.md)。
+返回 [当前热度最高](index.md)。
 
 | 顺序 | 项目 | 这一档新增 | 许可 | 它做什么 |
 | ---: | --- | ---: | --- | --- |
@@ -19,4 +20,4 @@ GitHub 趋势页的日榜。新增星标是页面上的 stars today。
 | 10 | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 95 | 未标明 | 用一个接口调用多家模型服务，并记录费用和路由。 |
 | 11 | [twostraws/SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill) | 65 | MIT | 给编码代理用的 SwiftUI 技能说明。 |
 
-顺序跟抓取当天的趋势页一致，没有按新增星标重排。写着「未标明」的，是接口没有给出 SPDX 许可证。
+写着「未标明」的，是接口没有给出 SPDX 许可证。抓取日就是本目录的日期。

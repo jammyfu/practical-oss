@@ -1,9 +1,10 @@
 # 当前热度 · 周
 
+抓取日 2026-10-10。
 GitHub 趋势页的周榜。新增星标是页面上的 stars this week。
 表内按这一档新增星标从高到低排。
 
-返回 [当前热度最高](当前热度最高.md)。
+返回 [当前热度最高](index.md)。
 
 | 顺序 | 项目 | 这一档新增 | 许可 | 它做什么 |
 | ---: | --- | ---: | --- | --- |
@@ -19,4 +20,4 @@ GitHub 趋势页的周榜。新增星标是页面上的 stars this week。
 | 10 | [cursor/plugins](https://github.com/cursor/plugins) | 1,125 | 未标明 | Cursor 的插件说明和官方插件。 |
 | 11 | [EpicGames/raddebugger](https://github.com/EpicGames/raddebugger) | 654 | MIT | 本机的图形调试器，可以看多个用户态进程。 |
 
-顺序跟抓取当天的趋势页一致，没有按新增星标重排。写着「未标明」的，是接口没有给出 SPDX 许可证。
+写着「未标明」的，是接口没有给出 SPDX 许可证。抓取日就是本目录的日期。

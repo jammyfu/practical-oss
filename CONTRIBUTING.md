@@ -48,6 +48,8 @@ trending_why: 一句话说明新在哪里，不要只重复星标
 
 `trending: yes` 的条目进入用途页里的「近两年的新默认」。未标的条目进入「历史最高」。日、周、月三档是 GitHub Trending 的快照，写在 `catalog/trending-windows.json`，不要用手改生成页。Git、React、PostgreSQL 这类长期默认不标 `trending`。
 
+生成页都在英文目录里。长期默认是 `catalog/history.md`。用途页是 `catalog/categories/<分类 id>.md`。趋势页在 `catalog/trending/<抓取日>/`，抓取日来自 `captured_on`，里面有 `index.md`、`day.md`、`week.md`、`month.md`。口语稿放在 `notes/<日期>.md`，日期是这批稿子对应的统计日，脚本不改这个目录。
+
 正文固定五节，标题不要改：
 
 1. `## 它解决什么问题`
@@ -64,6 +66,6 @@ trending_why: 一句话说明新在哪里，不要只重复星标
 python3 scripts/build_index.py
 ```
 
-脚本根据条目开头重建 README 目录、`catalog/` 下的热度页和分类页，以及 `catalog/index.json`。它不改 `entries/` 里的正文。
+脚本根据条目开头重建 README 目录、`catalog/history.md`、`catalog/categories/`、`catalog/trending/<抓取日>/`，以及 `catalog/index.json`。它不改 `entries/` 里的正文，也不改 `notes/`。
 
 提交前看一遍生成结果。标了 `trending` 的项目出现在分类页的「近两年的新默认」，未标的出现在「历史最高」。日、周、月榜只随 `catalog/trending-windows.json` 变化。

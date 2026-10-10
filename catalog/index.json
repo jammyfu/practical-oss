@@ -2,9 +2,10 @@
   "stars_at": [
     "2026-10-10"
   ],
-  "count": 70,
-  "history_count": 48,
-  "current_count": 22,
+  "trending_captured_on": "2026-10-10",
+  "count": 87,
+  "history_count": 61,
+  "current_count": 26,
   "categories": [
     {
       "id": "cli",
@@ -242,6 +243,25 @@
       "trending": false
     },
     {
+      "name": "Envoy",
+      "slug": "envoy",
+      "category": "backend",
+      "primary_repo": "envoyproxy/envoy",
+      "url": "https://github.com/envoyproxy/envoy",
+      "website": "https://www.envoyproxy.io",
+      "license": "Apache-2.0",
+      "language": "C++",
+      "stars": 29054,
+      "stars_at": "2026-10-10",
+      "summary": "在服务前面做七层代理，按配置转发、限流并带上可观测性。",
+      "tags": [
+        "代理",
+        "服务网格"
+      ],
+      "path": "entries/backend/envoy.md",
+      "trending": false
+    },
+    {
       "name": "FastAPI",
       "slug": "fastapi",
       "category": "backend",
@@ -277,6 +297,45 @@
         "Go"
       ],
       "path": "entries/backend/gin.md",
+      "trending": false
+    },
+    {
+      "name": "Hono",
+      "slug": "hono",
+      "category": "backend",
+      "primary_repo": "honojs/hono",
+      "url": "https://github.com/honojs/hono",
+      "website": "https://hono.dev",
+      "license": "MIT",
+      "language": "TypeScript",
+      "stars": 32469,
+      "stars_at": "2026-10-10",
+      "summary": "用同一套路由写 HTTP 接口，跑在 Node、Bun、Deno 或边缘运行时上。",
+      "tags": [
+        "HTTP",
+        "边缘"
+      ],
+      "trending": true,
+      "trending_why": "同一份路由能直接跑在边缘节点和多种运行时上，很多新接口把它当成默认框架。",
+      "path": "entries/backend/hono.md"
+    },
+    {
+      "name": "NestJS",
+      "slug": "nest",
+      "category": "backend",
+      "primary_repo": "nestjs/nest",
+      "url": "https://github.com/nestjs/nest",
+      "website": "https://nestjs.com",
+      "license": "MIT",
+      "language": "TypeScript",
+      "stars": 76806,
+      "stars_at": "2026-10-10",
+      "summary": "用模块和依赖注入组织 Node 服务的接口、配置和业务代码。",
+      "tags": [
+        "Node",
+        "TypeScript"
+      ],
+      "path": "entries/backend/nest.md",
       "trending": false
     },
     {
@@ -318,6 +377,25 @@
       "trending": false
     },
     {
+      "name": "Traefik",
+      "slug": "traefik",
+      "category": "backend",
+      "primary_repo": "traefik/traefik",
+      "url": "https://github.com/traefik/traefik",
+      "website": "https://traefik.io",
+      "license": "MIT",
+      "language": "Go",
+      "stars": 65134,
+      "stars_at": "2026-10-10",
+      "summary": "看着容器和集群里的服务变化，自动改反向代理和入口。",
+      "tags": [
+        "反向代理",
+        "Ingress"
+      ],
+      "path": "entries/backend/traefik.md",
+      "trending": false
+    },
+    {
       "name": "bat",
       "slug": "bat",
       "category": "cli",
@@ -334,6 +412,25 @@
         "命令行"
       ],
       "path": "entries/cli/bat.md",
+      "trending": false
+    },
+    {
+      "name": "delta",
+      "slug": "delta",
+      "category": "cli",
+      "primary_repo": "dandavison/delta",
+      "url": "https://github.com/dandavison/delta",
+      "website": "https://dandavison.github.io/delta/",
+      "license": "MIT",
+      "language": "Rust",
+      "stars": 32470,
+      "stars_at": "2026-10-10",
+      "summary": "把 Git 的 diff 显示成带语法高亮、能看清增删的页面。",
+      "tags": [
+        "diff",
+        "Git"
+      ],
+      "path": "entries/cli/delta.md",
       "trending": false
     },
     {
@@ -493,6 +590,25 @@
       "path": "entries/cli/ruff.md"
     },
     {
+      "name": "Starship",
+      "slug": "starship",
+      "category": "cli",
+      "primary_repo": "starship/starship",
+      "url": "https://github.com/starship/starship",
+      "website": "https://starship.rs",
+      "license": "ISC",
+      "language": "Rust",
+      "stars": 60199,
+      "stars_at": "2026-10-10",
+      "summary": "在常见的几种 shell 里显示同一套提示符，带上目录和 Git 状态。",
+      "tags": [
+        "提示符",
+        "shell"
+      ],
+      "path": "entries/cli/starship.md",
+      "trending": false
+    },
+    {
       "name": "tmux",
       "slug": "tmux",
       "category": "cli",
@@ -509,6 +625,25 @@
         "会话"
       ],
       "path": "entries/cli/tmux.md",
+      "trending": false
+    },
+    {
+      "name": "zoxide",
+      "slug": "zoxide",
+      "category": "cli",
+      "primary_repo": "ajeetdsouza/zoxide",
+      "url": "https://github.com/ajeetdsouza/zoxide",
+      "website": "https://github.com/ajeetdsouza/zoxide",
+      "license": "MIT",
+      "language": "Rust",
+      "stars": 40005,
+      "stars_at": "2026-10-10",
+      "summary": "记住去过的目录，用几个字母跳回去。",
+      "tags": [
+        "目录",
+        "shell"
+      ],
+      "path": "entries/cli/zoxide.md",
       "trending": false
     },
     {
@@ -552,6 +687,25 @@
       "path": "entries/data/duckdb.md"
     },
     {
+      "name": "Elasticsearch",
+      "slug": "elasticsearch",
+      "category": "data",
+      "primary_repo": "elastic/elasticsearch",
+      "url": "https://github.com/elastic/elasticsearch",
+      "website": "https://www.elastic.co/products/elasticsearch",
+      "license": "AGPL-3.0-only OR SSPL-1.0 OR Elastic-2.0",
+      "language": "Java",
+      "stars": 78223,
+      "stars_at": "2026-10-10",
+      "summary": "做全文检索和聚合分析。默认源码可在 AGPL、SSPL 和 Elastic License 里选一种。",
+      "tags": [
+        "搜索",
+        "许可可选"
+      ],
+      "path": "entries/data/elasticsearch.md",
+      "trending": false
+    },
+    {
       "name": "JupyterLab",
       "slug": "jupyterlab",
       "category": "data",
@@ -588,6 +742,26 @@
         "流"
       ],
       "path": "entries/data/kafka.md",
+      "trending": false
+    },
+    {
+      "name": "OpenSearch",
+      "slug": "opensearch",
+      "category": "data",
+      "primary_repo": "opensearch-project/OpenSearch",
+      "url": "https://github.com/opensearch-project/OpenSearch",
+      "website": "https://opensearch.org/",
+      "license": "Apache-2.0",
+      "language": "Java",
+      "stars": 13833,
+      "stars_at": "2026-10-10",
+      "summary": "Apache-2.0 的搜索和分析引擎，从 Elasticsearch 7.10.1 继续开发。",
+      "tags": [
+        "搜索",
+        "分析"
+      ],
+      "stars_note": "星标低于 Elasticsearch。它是 2021 年起以 Apache-2.0 继续的分支，部署不一定反映在这个仓库的星标上。",
+      "path": "entries/data/opensearch.md",
       "trending": false
     },
     {
@@ -766,6 +940,25 @@
       "trending": false
     },
     {
+      "name": "Cilium",
+      "slug": "cilium",
+      "category": "infra",
+      "primary_repo": "cilium/cilium",
+      "url": "https://github.com/cilium/cilium",
+      "website": "https://cilium.io",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 25625,
+      "stars_at": "2026-10-10",
+      "summary": "用 eBPF 给 Kubernetes 提供网络、网络策略和流量可观测性。",
+      "tags": [
+        "网络",
+        "eBPF"
+      ],
+      "path": "entries/infra/cilium.md",
+      "trending": false
+    },
+    {
       "name": "Docker",
       "slug": "docker",
       "category": "infra",
@@ -805,6 +998,26 @@
       "trending": false
     },
     {
+      "name": "K3s",
+      "slug": "k3s",
+      "category": "infra",
+      "primary_repo": "k3s-io/k3s",
+      "url": "https://github.com/k3s-io/k3s",
+      "website": "https://k3s.io",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 34160,
+      "stars_at": "2026-10-10",
+      "summary": "用一个轻量发行版把 Kubernetes 跑在小集群、分支机构和边缘节点上。",
+      "tags": [
+        "Kubernetes",
+        "边缘"
+      ],
+      "stars_note": "星标低于 kubernetes/kubernetes。小集群和边缘场景里它经常是默认发行版。",
+      "path": "entries/infra/k3s.md",
+      "trending": false
+    },
+    {
       "name": "Kubernetes",
       "slug": "kubernetes",
       "category": "infra",
@@ -840,6 +1053,25 @@
         "开源分支"
       ],
       "path": "entries/infra/opentofu.md",
+      "trending": false
+    },
+    {
+      "name": "Podman",
+      "slug": "podman",
+      "category": "infra",
+      "primary_repo": "podman-container-tools/podman",
+      "url": "https://github.com/podman-container-tools/podman",
+      "website": "https://podman.io",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 33023,
+      "stars_at": "2026-10-10",
+      "summary": "在本机构建和运行容器，不依赖一个常驻的 Docker 守护进程。",
+      "tags": [
+        "容器",
+        "根用户可选"
+      ],
+      "path": "entries/infra/podman.md",
       "trending": false
     },
     {
@@ -1058,6 +1290,27 @@
       "trending": false
     },
     {
+      "name": "Grafana Alloy",
+      "slug": "alloy",
+      "category": "observe",
+      "primary_repo": "grafana/alloy",
+      "url": "https://github.com/grafana/alloy",
+      "website": "https://grafana.com/oss/alloy",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 3593,
+      "stars_at": "2026-10-10",
+      "summary": "用一条流水线采集指标、日志和追踪，送到 Grafana 那一套后端。",
+      "tags": [
+        "采集",
+        "Grafana"
+      ],
+      "trending": true,
+      "trending_why": "2024 年发布，用来接替 Grafana Agent，成为 Grafana 体系里新的采集端。",
+      "stars_note": "仓库 2024 年才建立，星标低于它要接上的 Grafana 和 Loki。",
+      "path": "entries/observe/alloy.md"
+    },
+    {
       "name": "Grafana",
       "slug": "grafana",
       "category": "observe",
@@ -1075,6 +1328,46 @@
       ],
       "path": "entries/observe/grafana.md",
       "trending": false
+    },
+    {
+      "name": "Loki",
+      "slug": "loki",
+      "category": "observe",
+      "primary_repo": "grafana/loki",
+      "url": "https://github.com/grafana/loki",
+      "website": "https://grafana.com/oss/loki",
+      "license": "AGPL-3.0",
+      "language": "Go",
+      "stars": 29005,
+      "stars_at": "2026-10-10",
+      "summary": "按标签收集和查询日志，供 Grafana 和告警直接使用。",
+      "tags": [
+        "日志",
+        "Grafana"
+      ],
+      "path": "entries/observe/loki.md",
+      "trending": false
+    },
+    {
+      "name": "OpenTelemetry Collector",
+      "slug": "opentelemetry-collector",
+      "category": "observe",
+      "primary_repo": "open-telemetry/opentelemetry-collector",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector",
+      "website": "https://opentelemetry.io",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 7647,
+      "stars_at": "2026-10-10",
+      "summary": "接收、加工并转发指标、日志和调用链，不绑定某一家存储。",
+      "tags": [
+        "遥测",
+        "管道"
+      ],
+      "trending": true,
+      "trending_why": "新系统的指标、日志和调用链越来越先进入这条与厂商无关的管道，再送到各自的存储。",
+      "stars_note": "星标只计收集器仓库。规范和各语言 SDK 在别的仓库，采用范围比这个数字大。",
+      "path": "entries/observe/opentelemetry-collector.md"
     },
     {
       "name": "Prometheus",
@@ -1255,6 +1548,25 @@
       "path": "entries/selfhost/pocketbase.md"
     },
     {
+      "name": "Syncthing",
+      "slug": "syncthing",
+      "category": "selfhost",
+      "primary_repo": "syncthing/syncthing",
+      "url": "https://github.com/syncthing/syncthing",
+      "website": "https://syncthing.net/",
+      "license": "MPL-2.0",
+      "language": "Go",
+      "stars": 89264,
+      "stars_at": "2026-10-10",
+      "summary": "在自己的几台设备之间连续同步文件夹，不经过别人的网盘。",
+      "tags": [
+        "同步",
+        "设备"
+      ],
+      "path": "entries/selfhost/syncthing.md",
+      "trending": false
+    },
+    {
       "name": "Astro",
       "slug": "astro",
       "category": "web",
@@ -1332,6 +1644,26 @@
       ],
       "path": "entries/web/nextjs.md",
       "trending": false
+    },
+    {
+      "name": "Playwright",
+      "slug": "playwright",
+      "category": "web",
+      "primary_repo": "microsoft/playwright",
+      "url": "https://github.com/microsoft/playwright",
+      "website": "https://playwright.dev",
+      "license": "Apache-2.0",
+      "language": "TypeScript",
+      "stars": 97406,
+      "stars_at": "2026-10-10",
+      "summary": "用脚本驱动 Chromium、Firefox 和 WebKit，做浏览器里的端到端测试。",
+      "tags": [
+        "测试",
+        "浏览器"
+      ],
+      "trending": true,
+      "trending_why": "过去两年里，很多团队把浏览器端到端测试的默认工具换成了它。",
+      "path": "entries/web/playwright.md"
     },
     {
       "name": "React",

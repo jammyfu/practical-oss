@@ -1,9 +1,10 @@
 # 当前热度 · 月
 
+抓取日 2026-10-10。
 GitHub 趋势页的月榜。新增星标是页面上的 stars this month。
 表内按这一档新增星标从高到低排。
 
-返回 [当前热度最高](当前热度最高.md)。
+返回 [当前热度最高](index.md)。
 
 | 顺序 | 项目 | 这一档新增 | 许可 | 它做什么 |
 | ---: | --- | ---: | --- | --- |
@@ -30,4 +31,4 @@ GitHub 趋势页的月榜。新增星标是页面上的 stars this month。
 | 21 | [agent-substrate/substrate](https://github.com/agent-substrate/substrate) | 2,879 | Apache-2.0 | 代理运行时的底层系统。 |
 | 22 | [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) | 2,301 | 未标明 | 管理 Git worktree，方便多个代理并行改同一个仓库。 |
 
-顺序跟抓取当天的趋势页一致，没有按新增星标重排。写着「未标明」的，是接口没有给出 SPDX 许可证。
+写着「未标明」的，是接口没有给出 SPDX 许可证。抓取日就是本目录的日期。

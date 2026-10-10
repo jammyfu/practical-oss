@@ -2,7 +2,7 @@
 
 写代码和改配置时真正待着的环境。
 
-返回 [目录](../README.md)。跨分类的名单在 [历史最高](历史最高.md) 和 [当前热度最高](当前热度最高.md)。
+返回 [目录](../../README.md)。跨分类的名单在 [历史最高](../history.md) 和 [当前热度最高](../trending/2026-10-10/index.md)。
 
 ## 近两年的新默认
 
@@ -10,7 +10,7 @@
 
 | 项目 | 它做什么 | 许可 | 星标 |
 | --- | --- | --- | ---: |
-| [Zed](../entries/editor/zed.md) | 用原生界面写代码，并在同一编辑器里和别人实时改同一块缓冲区。 | GPL-3.0-or-later（标明的组件为 Apache-2.0） | 91,509 |
+| [Zed](../../entries/editor/zed.md) | 用原生界面写代码，并在同一编辑器里和别人实时改同一块缓冲区。 | GPL-3.0-or-later（标明的组件为 Apache-2.0） | 91,509 |
 
 ## 历史最高
 
@@ -18,7 +18,7 @@
 
 | 项目 | 它做什么 | 许可 | 星标 |
 | --- | --- | --- | ---: |
-| [Visual Studio Code](../entries/editor/vscode.md) | 带扩展市场的桌面代码编辑器，把编辑、调试、终端和远程开发放在一个窗口里。 | MIT | 193,498 |
-| [Neovim](../entries/editor/neovim.md) | 在 Vim 的编辑模型上重建可扩展性，用 Lua 配置，并把界面和编辑核心拆开。 | Apache-2.0 | 102,956 |
+| [Visual Studio Code](../../entries/editor/vscode.md) | 带扩展市场的桌面代码编辑器，把编辑、调试、终端和远程开发放在一个窗口里。 | MIT | 193,498 |
+| [Neovim](../../entries/editor/neovim.md) | 在 Vim 的编辑模型上重建可扩展性，用 Lua 配置，并把界面和编辑核心拆开。 | Apache-2.0 | 102,956 |
 
 星标取自 GitHub API，统计日见各条目的 `stars_at`。星标只说明仓库被关注的程度，不代替采用率。PostgreSQL 这类镜像仓库星标偏低，仍然是行业默认选择。

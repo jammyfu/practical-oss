@@ -16,8 +16,27 @@ INDEX = ROOT / "catalog" / "index.json"
 PAGES = ROOT / "catalog"
 START = "<!-- catalog:start -->"
 END = "<!-- catalog:end -->"
-HISTORY_NAME = "历史最高.md"
-CURRENT_NAME = "当前热度最高.md"
+HISTORY_PAGE = PAGES / "history.md"
+CATEGORY_DIR = PAGES / "categories"
+WINDOW_FILE = {"日": "day.md", "周": "week.md", "月": "month.md"}
+STALE_PAGES = (
+    "历史最高.md",
+    "当前热度最高.md",
+    "当前热度-日.md",
+    "当前热度-周.md",
+    "当前热度-月.md",
+    "命令行与版本控制.md",
+    "编辑器.md",
+    "语言与运行时.md",
+    "界面与前端.md",
+    "服务与接入.md",
+    "数据存储与分析.md",
+    "运行与基础设施.md",
+    "观测与安全.md",
+    "人工智能.md",
+    "自托管应用.md",
+    "创作.md",
+)
 FOOTER = (
     "星标取自 GitHub API，统计日见各条目的 `stars_at`。"
     "星标只说明仓库被关注的程度，不代替采用率。"
@@ -124,13 +143,21 @@ def write_page(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
-def render_category(category: dict, rows: list[dict], names: dict[str, str]) -> str:
-    page = PAGES / f"{category['name']}.md"
+def trending_dir(captured_on: str) -> Path:
+    return PAGES / "trending" / captured_on
+
+
+def window_path(captured_on: str, window_id: str) -> Path:
+    return trending_dir(captured_on) / WINDOW_FILE.get(window_id, f"{window_id}.md")
+
+
+def render_category(category: dict, rows: list[dict], captured_on: str) -> str:
+    page = CATEGORY_DIR / f"{category['id']}.md"
     current = by_stars([row for row in rows if row["trending"]])
     history = by_stars([row for row in rows if not row["trending"]])
     back = rel_link(page, README)
-    history_link = rel_link(page, PAGES / HISTORY_NAME)
-    current_link = rel_link(page, PAGES / CURRENT_NAME)
+    history_link = rel_link(page, HISTORY_PAGE)
+    current_link = rel_link(page, trending_dir(captured_on) / "index.md")
     lines = [
         f"# {category['name']}",
         "",
@@ -154,16 +181,16 @@ def render_category(category: dict, rows: list[dict], names: dict[str, str]) -> 
     return "\n".join(lines)
 
 
-def render_history(entries: list[dict], names: dict[str, str]) -> str:
-    page = PAGES / HISTORY_NAME
+def render_history(entries: list[dict], names: dict[str, str], captured_on: str) -> str:
+    page = HISTORY_PAGE
     rows = by_stars([row for row in entries if not row["trending"]])
     back = rel_link(page, README)
     lines = [
         "# 历史最高",
         "",
-        "长期默认，不含近两年才标成当前热度的项目。按收录时的 GitHub 星标从高到低排列。",
+        "长期默认，不含近两年才标成新默认的项目。按收录时的 GitHub 星标从高到低排列。各篇的统计日写在 `stars_at`。",
         "",
-        f"返回 [目录]({back})。当前这一波在 [当前热度最高]({rel_link(page, PAGES / CURRENT_NAME)})。",
+        f"返回 [目录]({back})。日、周、月趋势在 [当前热度最高]({rel_link(page, trending_dir(captured_on) / 'index.md')})。",
         "",
         *heat_table(rows, page, names, current=False),
         FOOTER,
@@ -172,18 +199,14 @@ def render_history(entries: list[dict], names: dict[str, str]) -> str:
     return "\n".join(lines)
 
 
-WINDOWS = ROOT / "catalog" / "trending-windows.json"
-WINDOW_ORDER = ("日", "周", "月")
-
-
-def render_window_page(window: dict) -> str:
-    filename = f"当前热度-{window['id']}.md"
-    page = PAGES / filename
-    back = rel_link(page, PAGES / CURRENT_NAME)
+def render_window_page(window: dict, captured_on: str) -> str:
+    page = window_path(captured_on, window["id"])
+    back = rel_link(page, trending_dir(captured_on) / "index.md")
     rows = sorted(window["repos"], key=lambda row: (-row["gain"], row["repo"].lower()))
     lines = [
         f"# 当前热度 · {window['title']}",
         "",
+        f"抓取日 {captured_on}。",
         window["lead"],
         "表内按这一档新增星标从高到低排。",
         "",
@@ -203,24 +226,22 @@ def render_window_page(window: dict) -> str:
     return "\n".join(lines)
 
 
-def render_current(entries: list[dict], names: dict[str, str]) -> str:
-    del entries, names
-    snapshot = json.loads(WINDOWS.read_text(encoding="utf-8"))
-    page = PAGES / CURRENT_NAME
+def render_current(captured_on: str, snapshot: dict) -> str:
+    page = trending_dir(captured_on) / "index.md"
     lines = [
         "# 当前热度最高",
         "",
-        f"按日、周、月分开。数据取自 {snapshot['source']}，抓取日 {snapshot['captured_on']}。顺序与当天页面一致，新增星标也是页面上的数字。",
+        f"按日、周、月分开。数据取自 {snapshot['source']}，抓取日 {captured_on}。目录名用的就是这一天。各档按该档新增星标从高到低排，新增星标是趋势页上的数字。",
         "",
-        "近两年才成为新默认、但今天没有出现在趋势页上的项目，仍留在各用途分类的「近两年的新默认」里，不混进这三档。",
+        "近两年才成为新默认、但抓取当天没有出现在趋势页上的项目，仍留在各用途分类的「近两年的新默认」里，不混进这三档。",
         "",
-        f"返回 [目录]({rel_link(page, README)})。长期默认在 [历史最高]({rel_link(page, PAGES / HISTORY_NAME)})。",
+        f"返回 [目录]({rel_link(page, README)})。长期默认在 [历史最高]({rel_link(page, HISTORY_PAGE)})。",
         "",
         "| 档 | 含义 | 项目数 |",
         "| --- | --- | ---: |",
     ]
     for window in snapshot["windows"]:
-        href = rel_link(page, PAGES / f"当前热度-{window['id']}.md")
+        href = rel_link(page, window_path(captured_on, window["id"]))
         lines.append(
             f"| [{window['title']}]({href}) | {window['meaning']} | {len(window['repos'])} |"
         )
@@ -228,22 +249,21 @@ def render_current(entries: list[dict], names: dict[str, str]) -> str:
     return "\n".join(lines)
 
 
-def render_readme(categories: list[dict], entries: list[dict]) -> str:
+def render_readme(categories: list[dict], entries: list[dict], captured_on: str) -> str:
     history = [row for row in entries if not row["trending"]]
-    current = [row for row in entries if row["trending"]]
     lines = [
         "## 热度",
         "",
-        "历史最高是长期默认。当前热度最高按日、周、月看 GitHub 趋势，不跟总星标混在一张表里。",
+        "历史最高是长期默认。当前热度最高按日、周、月看 GitHub 趋势，不跟总星标混在一张表里。趋势页的目录名是抓取日。",
         "",
         "| 名单 | 怎么分 | 篇数 |",
         "| --- | --- | ---: |",
-        f"| [历史最高](catalog/{HISTORY_NAME}) | 长期默认，按总星标 | {len(history)} |",
-        f"| [当前热度最高](catalog/{CURRENT_NAME}) | 日、周、月三档趋势 | 见该页 |",
+        f"| [历史最高](catalog/history.md) | 长期默认，按总星标 | {len(history)} |",
+        f"| [当前热度最高](catalog/trending/{captured_on}/index.md) | 日、周、月三档趋势，抓取日 {captured_on} | 见该页 |",
         "",
         "## 用途",
         "",
-        "每类一页。页内分成近两年的新默认，和历史最高。",
+        "每类一页，放在 `catalog/categories/`。页内分成近两年的新默认，和历史最高。",
         "",
         "| 分类 | 这一类是什么 | 历史 | 近两年 |",
         "| --- | --- | ---: | ---: |",
@@ -252,7 +272,7 @@ def render_readme(categories: list[dict], entries: list[dict]) -> str:
         rows = [row for row in entries if row["category"] == category["id"]]
         past = sum(1 for row in rows if not row["trending"])
         now = sum(1 for row in rows if row["trending"])
-        href = f"catalog/{category['name']}.md"
+        href = f"catalog/categories/{category['id']}.md"
         lines.append(f"| [{category['name']}]({href}) | {category['summary']} | {past} | {now} |")
     lines.append("")
     return "\n".join(lines)
@@ -270,20 +290,31 @@ def main() -> None:
     for entry in entries:
         grouped[entry["category"]].append(entry)
 
-    generated = {HISTORY_NAME, CURRENT_NAME}
+    snapshot = json.loads((PAGES / "trending-windows.json").read_text(encoding="utf-8"))
+    captured_on = snapshot["captured_on"]
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", captured_on):
+        raise SystemExit(f"captured_on is not a date: {captured_on}")
+
     for category in categories:
-        filename = f"{category['name']}.md"
-        generated.add(filename)
-        write_page(PAGES / filename, render_category(category, grouped[category["id"]], names))
-    write_page(PAGES / HISTORY_NAME, render_history(entries, names))
-    write_page(PAGES / CURRENT_NAME, render_current(entries, names))
-    snapshot = json.loads(WINDOWS.read_text(encoding="utf-8"))
+        write_page(
+            CATEGORY_DIR / f"{category['id']}.md",
+            render_category(category, grouped[category["id"]], captured_on),
+        )
+    write_page(HISTORY_PAGE, render_history(entries, names, captured_on))
+    write_page(trending_dir(captured_on) / "index.md", render_current(captured_on, snapshot))
     for window in snapshot["windows"]:
-        write_page(PAGES / f"当前热度-{window['id']}.md", render_window_page(window))
+        write_page(
+            window_path(captured_on, window["id"]),
+            render_window_page(window, captured_on),
+        )
+    for name in STALE_PAGES:
+        stale = PAGES / name
+        if stale.exists():
+            stale.unlink()
 
     readme = README.read_text(encoding="utf-8")
     pattern = re.compile(re.escape(START) + r".*?" + re.escape(END), re.S)
-    replacement = f"{START}\n\n{render_readme(categories, entries)}{END}"
+    replacement = f"{START}\n\n{render_readme(categories, entries, captured_on)}{END}"
     updated, count = pattern.subn(replacement, readme, count=1)
     if count != 1:
         raise SystemExit("README is missing catalog markers")
@@ -291,6 +322,7 @@ def main() -> None:
 
     payload = {
         "stars_at": sorted({entry["stars_at"] for entry in entries}),
+        "trending_captured_on": captured_on,
         "count": len(entries),
         "history_count": sum(1 for entry in entries if not entry["trending"]),
         "current_count": sum(1 for entry in entries if entry["trending"]),
