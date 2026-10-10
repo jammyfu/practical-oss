@@ -1,0 +1,341 @@
+{
+  "captured_on": "2026-10-10",
+  "source": "https://github.com/trending",
+  "windows": [
+    {
+      "id": "日",
+      "title": "日",
+      "meaning": "过去一天",
+      "lead": "GitHub 趋势页的日榜。新增星标是页面上的 stars today。",
+      "note": "顺序跟抓取当天的趋势页一致，没有按新增星标重排。写着「未标明」的，是接口没有给出 SPDX 许可证。",
+      "repos": [
+        {
+          "repo": "morluto/rea",
+          "url": "https://github.com/morluto/rea",
+          "gain": 14927,
+          "license": "MIT",
+          "summary": "用代理从应用行为追到本地二进制，做逆向。"
+        },
+        {
+          "repo": "boykopovar/AnyPS5",
+          "url": "https://github.com/boykopovar/AnyPS5",
+          "gain": 5868,
+          "license": "GPL-2.0",
+          "summary": "把 PS5 的可执行文件自动移植到 Linux 和 Windows。"
+        },
+        {
+          "repo": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "gain": 1687,
+          "license": "MIT",
+          "summary": "作者放在自己目录里的一套工程技能，给编码代理用。"
+        },
+        {
+          "repo": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "gain": 1739,
+          "license": "MIT",
+          "summary": "给几种编码代理画示意图，输出独立的 HTML 和 SVG。"
+        },
+        {
+          "repo": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "gain": 326,
+          "license": "Apache-2.0",
+          "summary": "代码审查工具，确定的规则检查再加上语言模型代理。"
+        },
+        {
+          "repo": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins",
+          "gain": 709,
+          "license": "Apache-2.0",
+          "summary": "给 Claude Cowork 用的一批知识工作插件。"
+        },
+        {
+          "repo": "BerriAI/litellm",
+          "url": "https://github.com/BerriAI/litellm",
+          "gain": 95,
+          "license": "未标明",
+          "summary": "用一个接口调用多家模型服务，并记录费用和路由。"
+        },
+        {
+          "repo": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "gain": 436,
+          "license": "MIT",
+          "summary": "给编码代理准备的一套工程技能。"
+        },
+        {
+          "repo": "storytold/artcraft",
+          "url": "https://github.com/storytold/artcraft",
+          "gain": 3752,
+          "license": "Apache-2.0",
+          "summary": "给绘画、设计和影像制作用的引擎。"
+        },
+        {
+          "repo": "Robbyant/lingbot-map",
+          "url": "https://github.com/Robbyant/lingbot-map",
+          "gain": 110,
+          "license": "Apache-2.0",
+          "summary": "做流式三维重建的几何上下文模型。"
+        },
+        {
+          "repo": "twostraws/SwiftUI-Agent-Skill",
+          "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+          "gain": 65,
+          "license": "MIT",
+          "summary": "给编码代理用的 SwiftUI 技能说明。"
+        }
+      ]
+    },
+    {
+      "id": "周",
+      "title": "周",
+      "meaning": "过去一周",
+      "lead": "GitHub 趋势页的周榜。新增星标是页面上的 stars this week。",
+      "note": "顺序跟抓取当天的趋势页一致，没有按新增星标重排。写着「未标明」的，是接口没有给出 SPDX 许可证。",
+      "repos": [
+        {
+          "repo": "boykopovar/AnyPS5",
+          "url": "https://github.com/boykopovar/AnyPS5",
+          "gain": 15539,
+          "license": "GPL-2.0",
+          "summary": "把 PS5 的可执行文件自动移植到 Linux 和 Windows。"
+        },
+        {
+          "repo": "mvschwarz/openrig",
+          "url": "https://github.com/mvschwarz/openrig",
+          "gain": 2338,
+          "license": "Apache-2.0",
+          "summary": "把多个编码代理组成有角色、能共享上下文的小组。"
+        },
+        {
+          "repo": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "gain": 8156,
+          "license": "MIT",
+          "summary": "作者放在自己目录里的一套工程技能，给编码代理用。"
+        },
+        {
+          "repo": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "gain": 4003,
+          "license": "Apache-2.0",
+          "summary": "先写 HTML，再渲染成视频，给代理用。"
+        },
+        {
+          "repo": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "gain": 1125,
+          "license": "未标明",
+          "summary": "Cursor 的插件说明和官方插件。"
+        },
+        {
+          "repo": "EpicGames/raddebugger",
+          "url": "https://github.com/EpicGames/raddebugger",
+          "gain": 654,
+          "license": "MIT",
+          "summary": "本机的图形调试器，可以看多个用户态进程。"
+        },
+        {
+          "repo": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "gain": 3850,
+          "license": "Apache-2.0",
+          "summary": "把代理这次会话做过的事留下来，下次接着用。"
+        },
+        {
+          "repo": "earthtojake/text-to-cad",
+          "url": "https://github.com/earthtojake/text-to-cad",
+          "gain": 2125,
+          "license": "MIT",
+          "summary": "让代理生成 CAD。"
+        },
+        {
+          "repo": "pingdotgg/t3code",
+          "url": "https://github.com/pingdotgg/t3code",
+          "gain": 2379,
+          "license": "MIT",
+          "summary": "仓库没有写简介。"
+        },
+        {
+          "repo": "Panniantong/Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "gain": 7084,
+          "license": "MIT",
+          "summary": "一个命令行，让代理去读和搜索多个网站。"
+        },
+        {
+          "repo": "DuarteSantos8/openGym",
+          "url": "https://github.com/DuarteSantos8/openGym",
+          "gain": 6749,
+          "license": "AGPL-3.0",
+          "summary": "自己托管的健身和体重记录。"
+        }
+      ]
+    },
+    {
+      "id": "月",
+      "title": "月",
+      "meaning": "过去一个月",
+      "lead": "GitHub 趋势页的月榜。新增星标是页面上的 stars this month。",
+      "note": "顺序跟抓取当天的趋势页一致，没有按新增星标重排。写着「未标明」的，是接口没有给出 SPDX 许可证。",
+      "repos": [
+        {
+          "repo": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "gain": 23028,
+          "license": "Apache-2.0",
+          "summary": "代码审查工具，确定的规则检查再加上语言模型代理。"
+        },
+        {
+          "repo": "debpalash/VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio",
+          "gain": 34560,
+          "license": "AGPL-3.0",
+          "summary": "在本地做声音克隆、配音和转写。"
+        },
+        {
+          "repo": "anthropics/financial-services",
+          "url": "https://github.com/anthropics/financial-services",
+          "gain": 4495,
+          "license": "Apache-2.0",
+          "summary": "仓库没有写简介。"
+        },
+        {
+          "repo": "paperclipai/paperclip",
+          "url": "https://github.com/paperclipai/paperclip",
+          "gain": 19137,
+          "license": "MIT",
+          "summary": "用来管理上班时使用的代理。"
+        },
+        {
+          "repo": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "gain": 22710,
+          "license": "MIT",
+          "summary": "给编码代理加上技能、记忆和安全方面的约束。"
+        },
+        {
+          "repo": "bilawalsidhu/gods-eye-view",
+          "url": "https://github.com/bilawalsidhu/gods-eye-view",
+          "gain": 29212,
+          "license": "未标明",
+          "summary": "浏览器里的卫星视角，用的是公开地理数据。"
+        },
+        {
+          "repo": "vectorize-io/hindsight",
+          "url": "https://github.com/vectorize-io/hindsight",
+          "gain": 24617,
+          "license": "MIT",
+          "summary": "给代理用的、会往下积累的记忆。"
+        },
+        {
+          "repo": "Tencent/WeKnora",
+          "url": "https://github.com/Tencent/WeKnora",
+          "gain": 11118,
+          "license": "未标明",
+          "summary": "把文档做成可查询的知识库，并接上代理。"
+        },
+        {
+          "repo": "anthropics/claude-code",
+          "url": "https://github.com/anthropics/claude-code",
+          "gain": 6173,
+          "license": "未标明",
+          "summary": "住在终端里的编码代理，能读仓库并执行操作。"
+        },
+        {
+          "repo": "TencentCloud/Octop",
+          "url": "https://github.com/TencentCloud/Octop",
+          "gain": 6720,
+          "license": "MIT",
+          "summary": "可以自己托管的多用户助手。"
+        },
+        {
+          "repo": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins",
+          "gain": 4131,
+          "license": "Apache-2.0",
+          "summary": "给 Claude Cowork 用的一批知识工作插件。"
+        },
+        {
+          "repo": "agent-substrate/substrate",
+          "url": "https://github.com/agent-substrate/substrate",
+          "gain": 2879,
+          "license": "Apache-2.0",
+          "summary": "代理运行时的底层系统。"
+        },
+        {
+          "repo": "NVIDIA/OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell",
+          "gain": 7118,
+          "license": "Apache-2.0",
+          "summary": "给自主代理用的隔离运行环境。"
+        },
+        {
+          "repo": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "gain": 11576,
+          "license": "Apache-2.0",
+          "summary": "先写 HTML，再渲染成视频，给代理用。"
+        },
+        {
+          "repo": "JustVugg/colibri",
+          "url": "https://github.com/JustVugg/colibri",
+          "gain": 13755,
+          "license": "Apache-2.0",
+          "summary": "用纯 C 在现有机器上跑大规模混合专家模型，权重从磁盘读。"
+        },
+        {
+          "repo": "mksglu/context-mode",
+          "url": "https://github.com/mksglu/context-mode",
+          "gain": 4398,
+          "license": "未标明",
+          "summary": "压缩编码代理的工具输出，并留下会话记忆。"
+        },
+        {
+          "repo": "trycua/cua",
+          "url": "https://github.com/trycua/cua",
+          "gain": 6877,
+          "license": "MIT",
+          "summary": "计算机操作代理的开源驱动和评测。"
+        },
+        {
+          "repo": "tashfeenahmed/freellmapi",
+          "url": "https://github.com/tashfeenahmed/freellmapi",
+          "gain": 7455,
+          "license": "MIT",
+          "summary": "把多家免费模型接口收成一个兼容 OpenAI 的入口。"
+        },
+        {
+          "repo": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "gain": 3503,
+          "license": "未标明",
+          "summary": "Cursor 的插件说明和官方插件。"
+        },
+        {
+          "repo": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "gain": 11155,
+          "license": "MIT",
+          "summary": "给编码代理准备的一套工程技能。"
+        },
+        {
+          "repo": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "gain": 27290,
+          "license": "MIT",
+          "summary": "让编码代理少写不必要的代码。"
+        },
+        {
+          "repo": "max-sixty/worktrunk",
+          "url": "https://github.com/max-sixty/worktrunk",
+          "gain": 2301,
+          "license": "未标明",
+          "summary": "管理 Git worktree，方便多个代理并行改同一个仓库。"
+        }
+      ]
+    }
+  ]
+}

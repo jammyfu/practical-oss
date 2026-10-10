@@ -46,7 +46,7 @@ trending: yes
 trending_why: 一句话说明新在哪里，不要只重复星标
 ```
 
-`trending: yes` 的条目进入「当前热度最高」，未标的条目进入「历史最高」。两份名单都按星标从高到低排。项目仍写在原来的功能分类页里，页内也按这两档分开。不要为热度另建一篇正文。Git、React、PostgreSQL 这类长期默认不标 `trending`。
+`trending: yes` 的条目进入用途页里的「近两年的新默认」。未标的条目进入「历史最高」。日、周、月三档是 GitHub Trending 的快照，写在 `catalog/trending-windows.json`，不要用手改生成页。Git、React、PostgreSQL 这类长期默认不标 `trending`。
 
 正文固定五节，标题不要改：
 
@@ -66,4 +66,4 @@ python3 scripts/build_index.py
 
 脚本根据条目开头重建 README 目录、`catalog/` 下的热度页和分类页，以及 `catalog/index.json`。它不改 `entries/` 里的正文。
 
-提交前看一遍生成结果，确认新项目出现在对应分类页，并只出现在历史最高或当前热度最高其中一页。
+提交前看一遍生成结果。标了 `trending` 的项目出现在分类页的「近两年的新默认」，未标的出现在「历史最高」。日、周、月榜只随 `catalog/trending-windows.json` 变化。

@@ -138,9 +138,9 @@ def render_category(category: dict, rows: list[dict], names: dict[str, str]) -> 
         "",
         f"返回 [目录]({back})。跨分类的名单在 [历史最高]({history_link}) 和 [当前热度最高]({current_link})。",
         "",
-        "## 当前热度最高",
+        "## 近两年的新默认",
         "",
-        "这一节只放本类里标了 `trending: yes` 的项目，按星标从高到低。标准是大约 2024 年以来成为新默认，或关注和采用明显跃升。",
+        "这一节只放本类里标了 `trending: yes` 的项目，按总星标从高到低。它不是今日、本周或本月的趋势榜。",
         "",
         *functional_table(current, page),
         "## 历史最高",
@@ -172,21 +172,59 @@ def render_history(entries: list[dict], names: dict[str, str]) -> str:
     return "\n".join(lines)
 
 
+WINDOWS = ROOT / "catalog" / "trending-windows.json"
+WINDOW_ORDER = ("日", "周", "月")
+
+
+def render_window_page(window: dict) -> str:
+    filename = f"当前热度-{window['id']}.md"
+    page = PAGES / filename
+    back = rel_link(page, PAGES / CURRENT_NAME)
+    rows = sorted(window["repos"], key=lambda row: (-row["gain"], row["repo"].lower()))
+    lines = [
+        f"# 当前热度 · {window['title']}",
+        "",
+        window["lead"],
+        "表内按这一档新增星标从高到低排。",
+        "",
+        f"返回 [当前热度最高]({back})。",
+        "",
+        "| 顺序 | 项目 | 这一档新增 | 许可 | 它做什么 |",
+        "| ---: | --- | ---: | --- | --- |",
+    ]
+    for index, row in enumerate(rows, start=1):
+        url = row["url"]
+        name = row["repo"]
+        gain = f"{row['gain']:,}"
+        license_name = row.get("license") or "未标明"
+        summary = row["summary"].replace("|", " ")
+        lines.append(f"| {index} | [{name}]({url}) | {gain} | {license_name} | {summary} |")
+    lines.extend(["", window["note"], ""])
+    return "\n".join(lines)
+
+
 def render_current(entries: list[dict], names: dict[str, str]) -> str:
+    del entries, names
+    snapshot = json.loads(WINDOWS.read_text(encoding="utf-8"))
     page = PAGES / CURRENT_NAME
-    rows = by_stars([row for row in entries if row["trending"]])
-    back = rel_link(page, README)
     lines = [
         "# 当前热度最高",
         "",
-        "大约 2024 年以来成为某类工作的新默认，或关注和实际采用明显跃升。按星标从高到低排列。Git、React、PostgreSQL 这类长期默认不进这一页。",
+        f"按日、周、月分开。数据取自 {snapshot['source']}，抓取日 {snapshot['captured_on']}。顺序与当天页面一致，新增星标也是页面上的数字。",
         "",
-        f"返回 [目录]({back})。长期默认在 [历史最高]({rel_link(page, PAGES / HISTORY_NAME)})。",
+        "近两年才成为新默认、但今天没有出现在趋势页上的项目，仍留在各用途分类的「近两年的新默认」里，不混进这三档。",
         "",
-        *heat_table(rows, page, names, current=True),
-        FOOTER,
+        f"返回 [目录]({rel_link(page, README)})。长期默认在 [历史最高]({rel_link(page, PAGES / HISTORY_NAME)})。",
         "",
+        "| 档 | 含义 | 项目数 |",
+        "| --- | --- | ---: |",
     ]
+    for window in snapshot["windows"]:
+        href = rel_link(page, PAGES / f"当前热度-{window['id']}.md")
+        lines.append(
+            f"| [{window['title']}]({href}) | {window['meaning']} | {len(window['repos'])} |"
+        )
+    lines.append("")
     return "\n".join(lines)
 
 
@@ -196,18 +234,18 @@ def render_readme(categories: list[dict], entries: list[dict]) -> str:
     lines = [
         "## 热度",
         "",
-        "两份名单分开。历史最高是长期默认，当前热度最高是近两年的新热。都按星标从高到低排。",
+        "历史最高是长期默认。当前热度最高按日、周、月看 GitHub 趋势，不跟总星标混在一张表里。",
         "",
         "| 名单 | 怎么分 | 篇数 |",
         "| --- | --- | ---: |",
-        f"| [历史最高](catalog/{HISTORY_NAME}) | 长期默认 | {len(history)} |",
-        f"| [当前热度最高](catalog/{CURRENT_NAME}) | 2024 年以来的新默认或热度跃升 | {len(current)} |",
+        f"| [历史最高](catalog/{HISTORY_NAME}) | 长期默认，按总星标 | {len(history)} |",
+        f"| [当前热度最高](catalog/{CURRENT_NAME}) | 日、周、月三档趋势 | 见该页 |",
         "",
         "## 用途",
         "",
-        "每类一页。页内再分成当前热度最高和历史最高。",
+        "每类一页。页内分成近两年的新默认，和历史最高。",
         "",
-        "| 分类 | 这一类是什么 | 历史 | 当前 |",
+        "| 分类 | 这一类是什么 | 历史 | 近两年 |",
         "| --- | --- | ---: | ---: |",
     ]
     for category in categories:
@@ -239,6 +277,9 @@ def main() -> None:
         write_page(PAGES / filename, render_category(category, grouped[category["id"]], names))
     write_page(PAGES / HISTORY_NAME, render_history(entries, names))
     write_page(PAGES / CURRENT_NAME, render_current(entries, names))
+    snapshot = json.loads(WINDOWS.read_text(encoding="utf-8"))
+    for window in snapshot["windows"]:
+        write_page(PAGES / f"当前热度-{window['id']}.md", render_window_page(window))
 
     readme = README.read_text(encoding="utf-8")
     pattern = re.compile(re.escape(START) + r".*?" + re.escape(END), re.S)
