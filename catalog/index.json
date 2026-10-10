@@ -1,0 +1,646 @@
+{
+  "stars_at": [
+    "2026-10-10"
+  ],
+  "count": 32,
+  "categories": [
+    {
+      "id": "cli",
+      "name": "命令行与版本控制",
+      "summary": "每天会打开的本地工具：找文件、搜代码、看 diff、管会话。"
+    },
+    {
+      "id": "editor",
+      "name": "编辑器",
+      "summary": "写代码和改配置时真正待着的环境。"
+    },
+    {
+      "id": "lang",
+      "name": "语言与运行时",
+      "summary": "大量软件直接跑在这些语言之上，选型时先看运行时，再看框架。"
+    },
+    {
+      "id": "web",
+      "name": "界面与前端",
+      "summary": "做网页界面时最常见的库、框架和构建工具。"
+    },
+    {
+      "id": "backend",
+      "name": "服务与接入",
+      "summary": "对外提供 HTTP 接口，或把请求转给后面的应用。"
+    },
+    {
+      "id": "data",
+      "name": "数据存储与分析",
+      "summary": "事务、缓存和分析查询。热度不等于还是 OSI 开源，许可变更单独写明。"
+    },
+    {
+      "id": "infra",
+      "name": "运行与基础设施",
+      "summary": "把应用送到机器上，并声明机器、网络和集群长什么样。"
+    },
+    {
+      "id": "observe",
+      "name": "观测与安全",
+      "summary": "服务跑起来之后，看指标、看图、查已知漏洞。"
+    },
+    {
+      "id": "ai",
+      "name": "人工智能",
+      "summary": "在自己的机器或集群上加载、运行和微调模型。"
+    },
+    {
+      "id": "selfhost",
+      "name": "自托管应用",
+      "summary": "装在自己服务器上、给人或家庭直接用的完整产品。"
+    },
+    {
+      "id": "media",
+      "name": "创作",
+      "summary": "制作图像、三维和动画的专业工具。"
+    }
+  ],
+  "projects": [
+    {
+      "name": "llama.cpp",
+      "slug": "llama-cpp",
+      "category": "ai",
+      "primary_repo": "ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "website": "https://github.com/ggml-org/llama.cpp",
+      "license": "MIT",
+      "language": "C++",
+      "stars": 130658,
+      "stars_at": "2026-10-10",
+      "summary": "用纯 C/C++ 在本机 CPU 和 GPU 上运行量化后的大语言模型。",
+      "tags": [
+        "推理",
+        "本地模型"
+      ],
+      "path": "entries/ai/llama-cpp.md"
+    },
+    {
+      "name": "Ollama",
+      "slug": "ollama",
+      "category": "ai",
+      "primary_repo": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "website": "https://ollama.com/",
+      "license": "MIT",
+      "language": "Go",
+      "stars": 182543,
+      "stars_at": "2026-10-10",
+      "summary": "用一条命令下载并运行本地大模型，再通过本机接口供其他程序调用。",
+      "tags": [
+        "本地模型",
+        "推理"
+      ],
+      "path": "entries/ai/ollama.md"
+    },
+    {
+      "name": "Transformers",
+      "slug": "transformers",
+      "category": "ai",
+      "primary_repo": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "website": "https://huggingface.co/docs/transformers",
+      "license": "Apache-2.0",
+      "language": "Python",
+      "stars": 166948,
+      "stars_at": "2026-10-10",
+      "summary": "用同一套 Python 接口加载、训练和运行大量文本、图像和语音模型。",
+      "tags": [
+        "模型",
+        "训练"
+      ],
+      "path": "entries/ai/transformers.md"
+    },
+    {
+      "name": "Django",
+      "slug": "django",
+      "category": "backend",
+      "primary_repo": "django/django",
+      "url": "https://github.com/django/django",
+      "website": "https://www.djangoproject.com/",
+      "license": "BSD-3-Clause",
+      "language": "Python",
+      "stars": 91357,
+      "stars_at": "2026-10-10",
+      "summary": "带数据模型、管理后台、表单和安全默认值的 Python Web 框架。",
+      "tags": [
+        "Web",
+        "Python"
+      ],
+      "path": "entries/backend/django.md"
+    },
+    {
+      "name": "FastAPI",
+      "slug": "fastapi",
+      "category": "backend",
+      "primary_repo": "fastapi/fastapi",
+      "url": "https://github.com/fastapi/fastapi",
+      "website": "https://fastapi.tiangolo.com/",
+      "license": "MIT",
+      "language": "Python",
+      "stars": 102954,
+      "stars_at": "2026-10-10",
+      "summary": "用 Python 类型声明描述 HTTP 接口，并自动给出校验和可交互的接口文档。",
+      "tags": [
+        "API",
+        "Python"
+      ],
+      "path": "entries/backend/fastapi.md"
+    },
+    {
+      "name": "nginx",
+      "slug": "nginx",
+      "category": "backend",
+      "primary_repo": "nginx/nginx",
+      "url": "https://github.com/nginx/nginx",
+      "website": "https://nginx.org/",
+      "license": "BSD-2-Clause",
+      "language": "C",
+      "stars": 31832,
+      "stars_at": "2026-10-10",
+      "summary": "用事件驱动处理大量连接，做网站静态文件、反向代理和负载均衡。",
+      "tags": [
+        "代理",
+        "Web 服务器"
+      ],
+      "path": "entries/backend/nginx.md"
+    },
+    {
+      "name": "Git",
+      "slug": "git",
+      "category": "cli",
+      "primary_repo": "git/git",
+      "url": "https://github.com/git/git",
+      "website": "https://git-scm.com/",
+      "license": "GPL-2.0",
+      "language": "C",
+      "stars": 63766,
+      "stars_at": "2026-10-10",
+      "stars_note": "GitHub 上的 git/git 是发布镜像，星标不能代表 Git 的实际采用率。",
+      "summary": "记录文件历史、分支和合并，让多人可以在同一份代码上分开工作再合回来。",
+      "tags": [
+        "版本控制",
+        "协作"
+      ],
+      "path": "entries/cli/git.md"
+    },
+    {
+      "name": "lazygit",
+      "slug": "lazygit",
+      "category": "cli",
+      "primary_repo": "jesseduffield/lazygit",
+      "url": "https://github.com/jesseduffield/lazygit",
+      "website": "https://github.com/jesseduffield/lazygit",
+      "license": "MIT",
+      "language": "Go",
+      "stars": 83061,
+      "stars_at": "2026-10-10",
+      "summary": "在终端里用面板完成暂存、提交、分支、变基和解决冲突。",
+      "tags": [
+        "Git",
+        "终端界面"
+      ],
+      "path": "entries/cli/lazygit.md"
+    },
+    {
+      "name": "ripgrep",
+      "slug": "ripgrep",
+      "category": "cli",
+      "primary_repo": "BurntSushi/ripgrep",
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "website": "https://github.com/BurntSushi/ripgrep",
+      "license": "Unlicense",
+      "language": "Rust",
+      "stars": 68980,
+      "stars_at": "2026-10-10",
+      "summary": "在目录树里按正则搜索文本，并默认跳过 Git 忽略的文件。",
+      "tags": [
+        "搜索",
+        "命令行"
+      ],
+      "path": "entries/cli/ripgrep.md"
+    },
+    {
+      "name": "tmux",
+      "slug": "tmux",
+      "category": "cli",
+      "primary_repo": "tmux/tmux",
+      "url": "https://github.com/tmux/tmux",
+      "website": "https://github.com/tmux/tmux",
+      "license": "ISC",
+      "language": "C",
+      "stars": 49868,
+      "stars_at": "2026-10-10",
+      "summary": "在一个终端连接里切开多个窗口和窗格，断线后会话还留在服务器上。",
+      "tags": [
+        "终端",
+        "会话"
+      ],
+      "path": "entries/cli/tmux.md"
+    },
+    {
+      "name": "DuckDB",
+      "slug": "duckdb",
+      "category": "data",
+      "primary_repo": "duckdb/duckdb",
+      "url": "https://github.com/duckdb/duckdb",
+      "website": "https://duckdb.org/",
+      "license": "MIT",
+      "language": "C++",
+      "stars": 42053,
+      "stars_at": "2026-10-10",
+      "summary": "嵌在进程里的分析型数据库，直接对本地文件和表格数据跑 SQL。",
+      "tags": [
+        "分析",
+        "SQL"
+      ],
+      "path": "entries/data/duckdb.md"
+    },
+    {
+      "name": "PostgreSQL",
+      "slug": "postgresql",
+      "category": "data",
+      "primary_repo": "postgres/postgres",
+      "url": "https://github.com/postgres/postgres",
+      "website": "https://www.postgresql.org/",
+      "license": "PostgreSQL",
+      "language": "C",
+      "stars": 22323,
+      "stars_at": "2026-10-10",
+      "stars_note": "postgres/postgres 是官方镜像，不接受 GitHub 拉取请求。星标严重低估它作为默认关系数据库的地位。",
+      "summary": "用事务保存业务数据，并用 SQL 同时完成约束、查询和不少分析。",
+      "tags": [
+        "数据库",
+        "SQL"
+      ],
+      "path": "entries/data/postgresql.md"
+    },
+    {
+      "name": "Redis",
+      "slug": "redis",
+      "category": "data",
+      "primary_repo": "redis/redis",
+      "url": "https://github.com/redis/redis",
+      "website": "https://redis.io/",
+      "license": "RSALv2 OR SSPL-1.0",
+      "language": "C",
+      "stars": 76678,
+      "stars_at": "2026-10-10",
+      "summary": "把键值、集合和过期时间放在内存里，用来做缓存、计数、队列和短期状态。",
+      "tags": [
+        "缓存",
+        "许可变更"
+      ],
+      "path": "entries/data/redis.md"
+    },
+    {
+      "name": "Valkey",
+      "slug": "valkey",
+      "category": "data",
+      "primary_repo": "valkey-io/valkey",
+      "url": "https://github.com/valkey-io/valkey",
+      "website": "https://valkey.io/",
+      "license": "BSD-3-Clause",
+      "language": "C",
+      "stars": 27391,
+      "stars_at": "2026-10-10",
+      "summary": "在 Redis 改许可之前的代码上继续开发的内存数据结构服务。",
+      "tags": [
+        "缓存",
+        "开源分支"
+      ],
+      "path": "entries/data/valkey.md"
+    },
+    {
+      "name": "Neovim",
+      "slug": "neovim",
+      "category": "editor",
+      "primary_repo": "neovim/neovim",
+      "url": "https://github.com/neovim/neovim",
+      "website": "https://neovim.io/",
+      "license": "Apache-2.0",
+      "language": "Vim Script",
+      "stars": 102956,
+      "stars_at": "2026-10-10",
+      "summary": "在 Vim 的编辑模型上重建可扩展性，用 Lua 配置，并把界面和编辑核心拆开。",
+      "tags": [
+        "编辑器",
+        "Vim"
+      ],
+      "path": "entries/editor/neovim.md"
+    },
+    {
+      "name": "Visual Studio Code",
+      "slug": "vscode",
+      "category": "editor",
+      "primary_repo": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "website": "https://code.visualstudio.com/",
+      "license": "MIT",
+      "language": "TypeScript",
+      "stars": 193498,
+      "stars_at": "2026-10-10",
+      "summary": "带扩展市场的桌面代码编辑器，把编辑、调试、终端和远程开发放在一个窗口里。",
+      "tags": [
+        "编辑器",
+        "扩展"
+      ],
+      "path": "entries/editor/vscode.md"
+    },
+    {
+      "name": "Docker",
+      "slug": "docker",
+      "category": "infra",
+      "primary_repo": "moby/moby",
+      "url": "https://github.com/moby/moby",
+      "website": "https://www.docker.com/",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 72163,
+      "stars_at": "2026-10-10",
+      "stars_note": "星标是容器引擎上游 moby/moby。同日 docker/compose 为 38,339。Docker Desktop 安装包是另一套产品，不随这个 Apache-2.0 仓库整包授权。",
+      "summary": "把应用和依赖打成镜像，在本机或服务器上以容器方式重复运行。",
+      "tags": [
+        "容器",
+        "部署"
+      ],
+      "path": "entries/infra/docker.md"
+    },
+    {
+      "name": "Kubernetes",
+      "slug": "kubernetes",
+      "category": "infra",
+      "primary_repo": "kubernetes/kubernetes",
+      "url": "https://github.com/kubernetes/kubernetes",
+      "website": "https://kubernetes.io/",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 128239,
+      "stars_at": "2026-10-10",
+      "summary": "在多台机器上声明容器要跑几份、如何发现彼此，以及失败后如何拉回来。",
+      "tags": [
+        "编排",
+        "集群"
+      ],
+      "path": "entries/infra/kubernetes.md"
+    },
+    {
+      "name": "OpenTofu",
+      "slug": "opentofu",
+      "category": "infra",
+      "primary_repo": "opentofu/opentofu",
+      "url": "https://github.com/opentofu/opentofu",
+      "website": "https://opentofu.org/",
+      "license": "MPL-2.0",
+      "language": "Go",
+      "stars": 30440,
+      "stars_at": "2026-10-10",
+      "summary": "用声明式配置创建和变更云上资源，并作为 Terraform 改许可后的开源延续。",
+      "tags": [
+        "基础设施即代码",
+        "开源分支"
+      ],
+      "path": "entries/infra/opentofu.md"
+    },
+    {
+      "name": "CPython",
+      "slug": "cpython",
+      "category": "lang",
+      "primary_repo": "python/cpython",
+      "url": "https://github.com/python/cpython",
+      "website": "https://www.python.org/",
+      "license": "PSF-2.0",
+      "language": "Python",
+      "stars": 77602,
+      "stars_at": "2026-10-10",
+      "summary": "Python 语言最常用的解释器，脚本、数据分析和大量后端服务都跑在它上面。",
+      "tags": [
+        "Python",
+        "运行时"
+      ],
+      "path": "entries/lang/cpython.md"
+    },
+    {
+      "name": "Go",
+      "slug": "go",
+      "category": "lang",
+      "primary_repo": "golang/go",
+      "url": "https://github.com/golang/go",
+      "website": "https://go.dev/",
+      "license": "BSD-3-Clause",
+      "language": "Go",
+      "stars": 139167,
+      "stars_at": "2026-10-10",
+      "summary": "以静态编译和显式并发著称的语言，大量基础设施工具用它写成单个可分发的程序。",
+      "tags": [
+        "语言",
+        "基础设施"
+      ],
+      "path": "entries/lang/go.md"
+    },
+    {
+      "name": "Node.js",
+      "slug": "node",
+      "category": "lang",
+      "primary_repo": "nodejs/node",
+      "url": "https://github.com/nodejs/node",
+      "website": "https://nodejs.org/",
+      "license": "MIT",
+      "language": "JavaScript",
+      "stars": 122261,
+      "stars_at": "2026-10-10",
+      "summary": "在服务器和命令行里运行 JavaScript，并让前端工具链有一个统一的运行时。",
+      "tags": [
+        "JavaScript",
+        "运行时"
+      ],
+      "path": "entries/lang/node.md"
+    },
+    {
+      "name": "Rust",
+      "slug": "rust",
+      "category": "lang",
+      "primary_repo": "rust-lang/rust",
+      "url": "https://github.com/rust-lang/rust",
+      "website": "https://www.rust-lang.org/",
+      "license": "MIT OR Apache-2.0",
+      "language": "Rust",
+      "stars": 119613,
+      "stars_at": "2026-10-10",
+      "summary": "在编译期约束内存所有权，用来写既要性能、又要避免一整类内存错误的程序。",
+      "tags": [
+        "语言",
+        "系统编程"
+      ],
+      "path": "entries/lang/rust.md"
+    },
+    {
+      "name": "Blender",
+      "slug": "blender",
+      "category": "media",
+      "primary_repo": "blender/blender",
+      "url": "https://github.com/blender/blender",
+      "website": "https://www.blender.org/",
+      "license": "GPL-2.0-or-later",
+      "language": "C++",
+      "stars": 20791,
+      "stars_at": "2026-10-10",
+      "stars_note": "blender/blender 是官方镜像。Blender 的实际用户远多于这个星标，发行通过 blender.org 而不是只通过 GitHub。",
+      "summary": "在一个程序里完成三维建模、雕刻、绑定、动画、材质、渲染和视频剪辑。",
+      "tags": [
+        "三维",
+        "创作"
+      ],
+      "path": "entries/media/blender.md"
+    },
+    {
+      "name": "Grafana",
+      "slug": "grafana",
+      "category": "observe",
+      "primary_repo": "grafana/grafana",
+      "url": "https://github.com/grafana/grafana",
+      "website": "https://grafana.com/",
+      "license": "AGPL-3.0",
+      "language": "TypeScript",
+      "stars": 77209,
+      "stars_at": "2026-10-10",
+      "summary": "把指标、日志和追踪查询画成仪表板，并挂上告警。",
+      "tags": [
+        "可视化",
+        "监控"
+      ],
+      "path": "entries/observe/grafana.md"
+    },
+    {
+      "name": "Prometheus",
+      "slug": "prometheus",
+      "category": "observe",
+      "primary_repo": "prometheus/prometheus",
+      "url": "https://github.com/prometheus/prometheus",
+      "website": "https://prometheus.io/",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 66456,
+      "stars_at": "2026-10-10",
+      "summary": "定时拉取指标并保存在时序库里，用 PromQL 查询服务是否偏离正常范围。",
+      "tags": [
+        "监控",
+        "指标"
+      ],
+      "path": "entries/observe/prometheus.md"
+    },
+    {
+      "name": "Trivy",
+      "slug": "trivy",
+      "category": "observe",
+      "primary_repo": "aquasecurity/trivy",
+      "url": "https://github.com/aquasecurity/trivy",
+      "website": "https://trivy.dev/",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 38314,
+      "stars_at": "2026-10-10",
+      "summary": "扫描容器镜像、文件系统和配置，找出已知漏洞、密钥和错误配置。",
+      "tags": [
+        "安全",
+        "扫描"
+      ],
+      "path": "entries/observe/trivy.md"
+    },
+    {
+      "name": "Immich",
+      "slug": "immich",
+      "category": "selfhost",
+      "primary_repo": "immich-app/immich",
+      "url": "https://github.com/immich-app/immich",
+      "website": "https://immich.app/",
+      "license": "AGPL-3.0",
+      "language": "TypeScript",
+      "stars": 115876,
+      "stars_at": "2026-10-10",
+      "summary": "自建照片和视频库，在手机上备份，在浏览器里按时间线、人物和地点浏览。",
+      "tags": [
+        "照片",
+        "自托管"
+      ],
+      "path": "entries/selfhost/immich.md"
+    },
+    {
+      "name": "React",
+      "slug": "react",
+      "category": "web",
+      "primary_repo": "react/react",
+      "url": "https://github.com/react/react",
+      "website": "https://react.dev/",
+      "license": "MIT",
+      "language": "JavaScript",
+      "stars": 250801,
+      "stars_at": "2026-10-10",
+      "summary": "用可组合的组件描述界面，数据变化时由库决定哪些部分需要重新渲染。",
+      "tags": [
+        "界面",
+        "组件"
+      ],
+      "path": "entries/web/react.md"
+    },
+    {
+      "name": "Tailwind CSS",
+      "slug": "tailwindcss",
+      "category": "web",
+      "primary_repo": "tailwindlabs/tailwindcss",
+      "url": "https://github.com/tailwindlabs/tailwindcss",
+      "website": "https://tailwindcss.com/",
+      "license": "MIT",
+      "language": "TypeScript",
+      "stars": 97848,
+      "stars_at": "2026-10-10",
+      "summary": "用一组预设的样式类直接在标记里排版，而不是先发明一套组件类名。",
+      "tags": [
+        "CSS",
+        "界面"
+      ],
+      "path": "entries/web/tailwindcss.md"
+    },
+    {
+      "name": "Vite",
+      "slug": "vite",
+      "category": "web",
+      "primary_repo": "vitejs/vite",
+      "url": "https://github.com/vitejs/vite",
+      "website": "https://vite.dev/",
+      "license": "MIT",
+      "language": "TypeScript",
+      "stars": 83265,
+      "stars_at": "2026-10-10",
+      "summary": "开发时用浏览器原生模块快速启动，生产构建再交给打包器收成静态文件。",
+      "tags": [
+        "构建",
+        "前端"
+      ],
+      "path": "entries/web/vite.md"
+    },
+    {
+      "name": "Vue",
+      "slug": "vue",
+      "category": "web",
+      "primary_repo": "vuejs/core",
+      "url": "https://github.com/vuejs/core",
+      "website": "https://vuejs.org/",
+      "license": "MIT",
+      "language": "TypeScript",
+      "stars": 54603,
+      "stars_at": "2026-10-10",
+      "stars_note": "统计的是当前源码仓库 vuejs/core。Vue 2 时代的 vuejs/vue 是另一个历史仓库，星标不能相加。",
+      "summary": "用模板、响应式状态和单文件组件构建界面，可以逐步嵌进已有页面。",
+      "tags": [
+        "界面",
+        "组件"
+      ],
+      "path": "entries/web/vue.md"
+    }
+  ]
+}
