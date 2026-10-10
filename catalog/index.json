@@ -2,7 +2,7 @@
   "stars_at": [
     "2026-10-10"
   ],
-  "count": 32,
+  "count": 52,
   "categories": [
     {
       "id": "cli",
@@ -98,6 +98,25 @@
       "path": "entries/ai/ollama.md"
     },
     {
+      "name": "PyTorch",
+      "slug": "pytorch",
+      "category": "ai",
+      "primary_repo": "pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "website": "https://pytorch.org/",
+      "license": "BSD-3-Clause",
+      "language": "Python",
+      "stars": 104007,
+      "stars_at": "2026-10-10",
+      "stars_note": "GitHub 未给出 SPDX 标识。仓库 LICENSE 使用带三条条件的 BSD 文本。",
+      "summary": "用 Python 写张量计算和神经网络，研究训练和模型实现大多从这里开始。",
+      "tags": [
+        "训练",
+        "张量"
+      ],
+      "path": "entries/ai/pytorch.md"
+    },
+    {
       "name": "Transformers",
       "slug": "transformers",
       "category": "ai",
@@ -114,6 +133,24 @@
         "训练"
       ],
       "path": "entries/ai/transformers.md"
+    },
+    {
+      "name": "Caddy",
+      "slug": "caddy",
+      "category": "backend",
+      "primary_repo": "caddyserver/caddy",
+      "url": "https://github.com/caddyserver/caddy",
+      "website": "https://caddyserver.com/",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 77648,
+      "stars_at": "2026-10-10",
+      "summary": "用简短配置提供网站和反向代理，并默认申请和续期 HTTPS 证书。",
+      "tags": [
+        "代理",
+        "HTTPS"
+      ],
+      "path": "entries/backend/caddy.md"
     },
     {
       "name": "Django",
@@ -152,6 +189,24 @@
       "path": "entries/backend/fastapi.md"
     },
     {
+      "name": "Gin",
+      "slug": "gin",
+      "category": "backend",
+      "primary_repo": "gin-gonic/gin",
+      "url": "https://github.com/gin-gonic/gin",
+      "website": "https://gin-gonic.com/",
+      "license": "MIT",
+      "language": "Go",
+      "stars": 89305,
+      "stars_at": "2026-10-10",
+      "summary": "用很少的封装在 Go 里写 HTTP 路由、参数绑定和中间件。",
+      "tags": [
+        "API",
+        "Go"
+      ],
+      "path": "entries/backend/gin.md"
+    },
+    {
       "name": "nginx",
       "slug": "nginx",
       "category": "backend",
@@ -168,6 +223,78 @@
         "Web 服务器"
       ],
       "path": "entries/backend/nginx.md"
+    },
+    {
+      "name": "Spring Boot",
+      "slug": "spring-boot",
+      "category": "backend",
+      "primary_repo": "spring-projects/spring-boot",
+      "url": "https://github.com/spring-projects/spring-boot",
+      "website": "https://spring.io/projects/spring-boot",
+      "license": "Apache-2.0",
+      "language": "Java",
+      "stars": 81581,
+      "stars_at": "2026-10-10",
+      "summary": "用约定和起步依赖把 Spring 应用装成可运行的 Java 服务。",
+      "tags": [
+        "Java",
+        "服务"
+      ],
+      "path": "entries/backend/spring-boot.md"
+    },
+    {
+      "name": "bat",
+      "slug": "bat",
+      "category": "cli",
+      "primary_repo": "sharkdp/bat",
+      "url": "https://github.com/sharkdp/bat",
+      "website": "https://github.com/sharkdp/bat",
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "stars": 60747,
+      "stars_at": "2026-10-10",
+      "summary": "在终端里分页查看文件，带行号和按语言着色的语法高亮。",
+      "tags": [
+        "阅读",
+        "命令行"
+      ],
+      "path": "entries/cli/bat.md"
+    },
+    {
+      "name": "fd",
+      "slug": "fd",
+      "category": "cli",
+      "primary_repo": "sharkdp/fd",
+      "url": "https://github.com/sharkdp/fd",
+      "website": "https://github.com/sharkdp/fd",
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "stars": 44736,
+      "stars_at": "2026-10-10",
+      "summary": "按名字找文件，默认跳过 Git 忽略的目录，并用颜色标出匹配的路径。",
+      "tags": [
+        "搜索",
+        "命令行"
+      ],
+      "path": "entries/cli/fd.md"
+    },
+    {
+      "name": "fzf",
+      "slug": "fzf",
+      "category": "cli",
+      "primary_repo": "junegunn/fzf",
+      "url": "https://github.com/junegunn/fzf",
+      "website": "https://github.com/junegunn/fzf",
+      "license": "MIT",
+      "language": "Go",
+      "stars": 83509,
+      "stars_at": "2026-10-10",
+      "summary": "对任意一行文本做模糊筛选，用来挑文件、历史命令、分支和提交。",
+      "tags": [
+        "筛选",
+        "命令行"
+      ],
+      "path": "entries/cli/fzf.md"
     },
     {
       "name": "Git",
@@ -187,6 +314,25 @@
         "协作"
       ],
       "path": "entries/cli/git.md"
+    },
+    {
+      "name": "jq",
+      "slug": "jq",
+      "category": "cli",
+      "primary_repo": "jqlang/jq",
+      "url": "https://github.com/jqlang/jq",
+      "website": "https://jqlang.org/",
+      "license": "MIT",
+      "language": "C",
+      "stars": 35774,
+      "stars_at": "2026-10-10",
+      "stars_note": "GitHub 未标出 SPDX 标识。仓库 COPYING 是 MIT 许可文本。",
+      "summary": "用一条表达式从 JSON 里取出、过滤和重写字段，结果仍是可继续管道处理的数据。",
+      "tags": [
+        "JSON",
+        "命令行"
+      ],
+      "path": "entries/cli/jq.md"
     },
     {
       "name": "lazygit",
@@ -261,6 +407,43 @@
       "path": "entries/data/duckdb.md"
     },
     {
+      "name": "JupyterLab",
+      "slug": "jupyterlab",
+      "category": "data",
+      "primary_repo": "jupyterlab/jupyterlab",
+      "url": "https://github.com/jupyterlab/jupyterlab",
+      "website": "https://jupyter.org/",
+      "license": "BSD-3-Clause",
+      "language": "TypeScript",
+      "stars": 15347,
+      "stars_at": "2026-10-10",
+      "stars_note": "Jupyter 生态还包括 Notebook 格式和内核。这个星标只属于 JupyterLab 这个界面仓库。",
+      "summary": "在浏览器里把代码、图表和说明放进同一本可反复运行的笔记本。",
+      "tags": [
+        "笔记本",
+        "分析"
+      ],
+      "path": "entries/data/jupyterlab.md"
+    },
+    {
+      "name": "Apache Kafka",
+      "slug": "kafka",
+      "category": "data",
+      "primary_repo": "apache/kafka",
+      "url": "https://github.com/apache/kafka",
+      "website": "https://kafka.apache.org/",
+      "license": "Apache-2.0",
+      "language": "Java",
+      "stars": 33921,
+      "stars_at": "2026-10-10",
+      "summary": "用可保留的日志接收事件，让多个系统按自己的速度读取同一份流。",
+      "tags": [
+        "事件",
+        "流"
+      ],
+      "path": "entries/data/kafka.md"
+    },
+    {
       "name": "PostgreSQL",
       "slug": "postgresql",
       "category": "data",
@@ -296,6 +479,25 @@
         "许可变更"
       ],
       "path": "entries/data/redis.md"
+    },
+    {
+      "name": "SQLite",
+      "slug": "sqlite",
+      "category": "data",
+      "primary_repo": "sqlite/sqlite",
+      "url": "https://github.com/sqlite/sqlite",
+      "website": "https://www.sqlite.org/",
+      "license": "Public Domain",
+      "language": "C",
+      "stars": 10628,
+      "stars_at": "2026-10-10",
+      "stars_note": "sqlite/sqlite 是官方源码镜像。SQLite 的部署量远高于这个星标，发布渠道是 sqlite.org。",
+      "summary": "把一个完整的 SQL 数据库放进单个库文件，由应用进程直接读写。",
+      "tags": [
+        "数据库",
+        "嵌入式"
+      ],
+      "path": "entries/data/sqlite.md"
     },
     {
       "name": "Valkey",
@@ -352,6 +554,24 @@
       "path": "entries/editor/vscode.md"
     },
     {
+      "name": "Ansible",
+      "slug": "ansible",
+      "category": "infra",
+      "primary_repo": "ansible/ansible",
+      "url": "https://github.com/ansible/ansible",
+      "website": "https://www.ansible.com/",
+      "license": "GPL-3.0",
+      "language": "Python",
+      "stars": 70948,
+      "stars_at": "2026-10-10",
+      "summary": "用 SSH 和任务清单把多台机器配成声明的样子，目标机器上不必先装代理。",
+      "tags": [
+        "配置",
+        "自动化"
+      ],
+      "path": "entries/infra/ansible.md"
+    },
+    {
       "name": "Docker",
       "slug": "docker",
       "category": "infra",
@@ -369,6 +589,24 @@
         "部署"
       ],
       "path": "entries/infra/docker.md"
+    },
+    {
+      "name": "Helm",
+      "slug": "helm",
+      "category": "infra",
+      "primary_repo": "helm/helm",
+      "url": "https://github.com/helm/helm",
+      "website": "https://helm.sh/",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 30306,
+      "stars_at": "2026-10-10",
+      "summary": "把一组 Kubernetes 资源配置打包成可版本化、可按环境改参数的图表。",
+      "tags": [
+        "Kubernetes",
+        "发布"
+      ],
+      "path": "entries/infra/helm.md"
     },
     {
       "name": "Kubernetes",
@@ -479,6 +717,25 @@
       "path": "entries/lang/rust.md"
     },
     {
+      "name": "TypeScript",
+      "slug": "typescript",
+      "category": "lang",
+      "primary_repo": "microsoft/TypeScript",
+      "url": "https://github.com/microsoft/TypeScript",
+      "website": "https://www.typescriptlang.org/",
+      "license": "Apache-2.0",
+      "language": "TypeScript",
+      "stars": 111371,
+      "stars_at": "2026-10-10",
+      "stars_note": "2026-10-10，GitHub 按字节把仓库主语言标成 Go。使用者写的仍是 TypeScript，编译器实现里已经有大量 Go 代码。",
+      "summary": "在 JavaScript 上增加可擦除的类型，让编辑器和编译器在运行前指出一类错误。",
+      "tags": [
+        "JavaScript",
+        "类型"
+      ],
+      "path": "entries/lang/typescript.md"
+    },
+    {
       "name": "Blender",
       "slug": "blender",
       "category": "media",
@@ -496,6 +753,43 @@
         "创作"
       ],
       "path": "entries/media/blender.md"
+    },
+    {
+      "name": "GIMP",
+      "slug": "gimp",
+      "category": "media",
+      "primary_repo": "GNOME/gimp",
+      "url": "https://github.com/GNOME/gimp",
+      "website": "https://www.gimp.org/",
+      "license": "GPL-3.0-or-later",
+      "language": "C",
+      "stars": 6497,
+      "stars_at": "2026-10-10",
+      "stars_note": "GNOME/gimp 是 GitLab 的只读镜像。下载稳定版应走 gimp.org，星标不代表用户规模。",
+      "summary": "用图层、选区和画笔编辑照片与位图，覆盖修图、合成和格式转换。",
+      "tags": [
+        "图像",
+        "修图"
+      ],
+      "path": "entries/media/gimp.md"
+    },
+    {
+      "name": "OBS Studio",
+      "slug": "obs-studio",
+      "category": "media",
+      "primary_repo": "obsproject/obs-studio",
+      "url": "https://github.com/obsproject/obs-studio",
+      "website": "https://obsproject.com/",
+      "license": "GPL-2.0",
+      "language": "C",
+      "stars": 77210,
+      "stars_at": "2026-10-10",
+      "summary": "把摄像头、窗口和屏幕组合成一个画面，用来直播或录成视频。",
+      "tags": [
+        "直播",
+        "录制"
+      ],
+      "path": "entries/media/obs-studio.md"
     },
     {
       "name": "Grafana",
@@ -570,6 +864,60 @@
       "path": "entries/selfhost/immich.md"
     },
     {
+      "name": "Nextcloud",
+      "slug": "nextcloud",
+      "category": "selfhost",
+      "primary_repo": "nextcloud/server",
+      "url": "https://github.com/nextcloud/server",
+      "website": "https://nextcloud.com/",
+      "license": "AGPL-3.0",
+      "language": "PHP",
+      "stars": 37047,
+      "stars_at": "2026-10-10",
+      "summary": "自建文件同步、日历、联系人和协作入口，用来替代一整套厂商云办公套件。",
+      "tags": [
+        "文件同步",
+        "协作"
+      ],
+      "path": "entries/selfhost/nextcloud.md"
+    },
+    {
+      "name": "Paperless-ngx",
+      "slug": "paperless-ngx",
+      "category": "selfhost",
+      "primary_repo": "paperless-ngx/paperless-ngx",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "license": "GPL-3.0",
+      "language": "Python",
+      "stars": 46447,
+      "stars_at": "2026-10-10",
+      "website": "https://docs.paperless-ngx.com/",
+      "summary": "把扫描件收成可搜索的文档库，用标签、通信方和日期代替一叠文件夹。",
+      "tags": [
+        "文档",
+        "归档"
+      ],
+      "path": "entries/selfhost/paperless-ngx.md"
+    },
+    {
+      "name": "Next.js",
+      "slug": "nextjs",
+      "category": "web",
+      "primary_repo": "vercel/next.js",
+      "url": "https://github.com/vercel/next.js",
+      "website": "https://nextjs.org/",
+      "license": "MIT",
+      "language": "JavaScript",
+      "stars": 143097,
+      "stars_at": "2026-10-10",
+      "summary": "在 React 之外补上路由、渲染方式和全栈接口，用来交付一个完整网站。",
+      "tags": [
+        "React",
+        "框架"
+      ],
+      "path": "entries/web/nextjs.md"
+    },
+    {
       "name": "React",
       "slug": "react",
       "category": "web",
@@ -586,6 +934,24 @@
         "组件"
       ],
       "path": "entries/web/react.md"
+    },
+    {
+      "name": "Svelte",
+      "slug": "svelte",
+      "category": "web",
+      "primary_repo": "sveltejs/svelte",
+      "url": "https://github.com/sveltejs/svelte",
+      "website": "https://svelte.dev/",
+      "license": "MIT",
+      "language": "JavaScript",
+      "stars": 88404,
+      "stars_at": "2026-10-10",
+      "summary": "把组件编译成更新 DOM 的 JavaScript，浏览器里不必再跑一套框架运行时。",
+      "tags": [
+        "界面",
+        "编译"
+      ],
+      "path": "entries/web/svelte.md"
     },
     {
       "name": "Tailwind CSS",
