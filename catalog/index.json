@@ -1,11 +1,12 @@
 {
   "stars_at": [
-    "2026-10-10"
+    "2026-10-10",
+    "2026-10-11"
   ],
   "trending_captured_on": "2026-10-10",
-  "count": 87,
+  "count": 91,
   "history_count": 61,
-  "current_count": 26,
+  "current_count": 30,
   "categories": [
     {
       "id": "cli",
@@ -940,6 +941,27 @@
       "trending": false
     },
     {
+      "name": "bootc",
+      "slug": "bootc",
+      "category": "infra",
+      "primary_repo": "bootc-dev/bootc",
+      "url": "https://github.com/bootc-dev/bootc",
+      "website": "https://bootc.dev/",
+      "license": "MIT OR Apache-2.0",
+      "language": "Rust",
+      "stars": 2305,
+      "stars_at": "2026-10-11",
+      "summary": "用 OCI 容器镜像安装、启动和事务式更新整台 Linux 主机。",
+      "tags": [
+        "镜像模式",
+        "操作系统"
+      ],
+      "trending": true,
+      "trending_why": "2024 年起被 RHEL 镜像模式和一批原子化发行版用来启动并更新整台机器。",
+      "stars_note": "命令行仓库星标不高。镜像模式已经进了 RHEL，以及 Fedora、CentOS 这条线上的 bootc 镜像。",
+      "path": "entries/infra/bootc.md"
+    },
+    {
       "name": "Cilium",
       "slug": "cilium",
       "category": "infra",
@@ -998,6 +1020,26 @@
       "trending": false
     },
     {
+      "name": "Incus",
+      "slug": "incus",
+      "category": "infra",
+      "primary_repo": "lxc/incus",
+      "url": "https://github.com/lxc/incus",
+      "website": "https://linuxcontainers.org/incus",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 6367,
+      "stars_at": "2026-10-11",
+      "summary": "在一台或一组机器上管理完整的 Linux 系统容器和虚拟机。",
+      "tags": [
+        "系统容器",
+        "虚拟机"
+      ],
+      "trending": true,
+      "trending_why": "LXD 在 2023 年底改成 AGPL 并加上贡献者协议后，社区用它继续以 Apache-2.0 管理完整系统。",
+      "path": "entries/infra/incus.md"
+    },
+    {
       "name": "K3s",
       "slug": "k3s",
       "category": "infra",
@@ -1018,6 +1060,27 @@
       "trending": false
     },
     {
+      "name": "Karpenter",
+      "slug": "karpenter",
+      "category": "infra",
+      "primary_repo": "kubernetes-sigs/karpenter",
+      "url": "https://github.com/kubernetes-sigs/karpenter",
+      "website": "https://karpenter.sh/",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 2219,
+      "stars_at": "2026-10-11",
+      "summary": "按排不上的 Pod 直接申请和回收 Kubernetes 节点。",
+      "tags": [
+        "Kubernetes",
+        "节点伸缩"
+      ],
+      "trending": true,
+      "trending_why": "2024 年 1.0 之后，不少集群用它取代按节点组加减机器的做法，核心也交到了 Kubernetes 社区。",
+      "stars_note": "核心仓库星标低于 AWS 实现。很多人安装的是 aws/karpenter-provider-aws。",
+      "path": "entries/infra/karpenter.md"
+    },
+    {
       "name": "Kubernetes",
       "slug": "kubernetes",
       "category": "infra",
@@ -1035,6 +1098,26 @@
       ],
       "path": "entries/infra/kubernetes.md",
       "trending": false
+    },
+    {
+      "name": "OpenBao",
+      "slug": "openbao",
+      "category": "infra",
+      "primary_repo": "openbao/openbao",
+      "url": "https://github.com/openbao/openbao",
+      "website": "https://openbao.org/",
+      "license": "MPL-2.0",
+      "language": "Go",
+      "stars": 8378,
+      "stars_at": "2026-10-11",
+      "summary": "集中保管密钥、证书和加密能力，并作为 Vault 改许可后的开源延续。",
+      "tags": [
+        "密钥",
+        "开源分支"
+      ],
+      "trending": true,
+      "trending_why": "2024 年起作为 Vault 改成 Business Source License 之后的 MPL 延续，由 Linux 基金会托管。",
+      "path": "entries/infra/openbao.md"
     },
     {
       "name": "OpenTofu",

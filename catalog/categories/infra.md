@@ -8,7 +8,12 @@
 
 这一节只放本类里标了 `trending: yes` 的项目，按总星标从高到低。它不是今日、本周或本月的趋势榜。
 
-这一档还没有条目。
+| 项目 | 它做什么 | 许可 | 星标 |
+| --- | --- | --- | ---: |
+| [OpenBao](../../entries/infra/openbao.md) | 集中保管密钥、证书和加密能力，并作为 Vault 改许可后的开源延续。 | MPL-2.0 | 8,378 |
+| [Incus](../../entries/infra/incus.md) | 在一台或一组机器上管理完整的 Linux 系统容器和虚拟机。 | Apache-2.0 | 6,367 |
+| [bootc](../../entries/infra/bootc.md) | 用 OCI 容器镜像安装、启动和事务式更新整台 Linux 主机。 | MIT OR Apache-2.0 | 2,305（见正文） |
+| [Karpenter](../../entries/infra/karpenter.md) | 按排不上的 Pod 直接申请和回收 Kubernetes 节点。 | Apache-2.0 | 2,219（见正文） |
 
 ## 历史最高
 

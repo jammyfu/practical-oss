@@ -8,7 +8,7 @@
 
 主文件只做目录。热度拆成两处：[历史最高](catalog/history.md) 是长期默认，[当前热度最高](catalog/trending/2026-10-10/index.md) 按日、周、月看趋势，文件夹名是抓取日。用途分类在 `catalog/categories/`，每种一页。项目说明仍在 `entries/`，五节顺序固定。
 
-机器可读目录在 [`catalog/index.json`](catalog/index.json)。分类定义在 [`catalog/categories.json`](catalog/categories.json)。新增一篇的规则在 [CONTRIBUTING.md](CONTRIBUTING.md)。想用口语把项目讲清楚，看 [`notes/2026-10-10.md`](notes/2026-10-10.md)。
+机器可读目录在 [`catalog/index.json`](catalog/index.json)。分类定义在 [`catalog/categories.json`](catalog/categories.json)。新增一篇的规则在 [CONTRIBUTING.md](CONTRIBUTING.md)。想用口语把项目讲清楚，看 [`notes/2026-10-11.md`](notes/2026-10-11.md)。
 
 本仓库的文字使用 [CC BY 4.0](LICENSE)。项目名称和上游代码仍属于各自的所有者，许可以各篇正文为准。
 
@@ -35,7 +35,7 @@
 | [界面与前端](catalog/categories/web.md) | 做网页界面时最常见的库、框架和构建工具。 | 6 | 4 |
 | [服务与接入](catalog/categories/backend.md) | 对外提供 HTTP 接口，或把请求转给后面的应用。 | 9 | 1 |
 | [数据存储与分析](catalog/categories/data.md) | 事务、缓存和分析查询。热度不等于还是 OSI 开源，许可变更单独写明。 | 8 | 3 |
-| [运行与基础设施](catalog/categories/infra.md) | 把应用送到机器上，并声明机器、网络和集群长什么样。 | 8 | 0 |
+| [运行与基础设施](catalog/categories/infra.md) | 把应用送到机器上，并声明机器、网络和集群长什么样。 | 8 | 4 |
 | [观测与安全](catalog/categories/observe.md) | 服务跑起来之后，看指标、看图、查已知漏洞。 | 4 | 2 |
 | [人工智能](catalog/categories/ai.md) | 在自己的机器或集群上加载、运行和微调模型。 | 2 | 5 |
 | [自托管应用](catalog/categories/selfhost.md) | 装在自己服务器上、给人或家庭直接用的完整产品。 | 3 | 5 |
