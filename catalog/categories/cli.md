@@ -12,6 +12,7 @@
 | --- | --- | --- | ---: |
 | [Ghostty](../../entries/cli/ghostty.md) | 用 GPU 绘制终端网格的模拟器，窗口里跑的仍是原来的 shell。 | MIT | 62,010 |
 | [Ruff](../../entries/cli/ruff.md) | 用一个程序检查并格式化 Python，覆盖原来要靠多件 lint 工具才做的事。 | MIT | 49,971 |
+| [Jujutsu](../../entries/cli/jj.md) | 用 Git 仓库当存储，在上面做没有暂存区、冲突也能提交的版本管理。 | Apache-2.0 | 31,973 |
 
 ## 历史最高
 

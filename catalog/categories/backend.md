@@ -11,6 +11,7 @@
 | 项目 | 它做什么 | 许可 | 星标 |
 | --- | --- | --- | ---: |
 | [Hono](../../entries/backend/hono.md) | 用同一套路由写 HTTP 接口，跑在 Node、Bun、Deno 或边缘运行时上。 | MIT | 32,469 |
+| [Envoy Gateway](../../entries/backend/envoy-gateway.md) | 用 Gateway API 管理 Envoy，把集群入口的路由和策略从 Ingress 注解里拆出来。 | Apache-2.0 | 3,074（见正文） |
 
 ## 历史最高
 

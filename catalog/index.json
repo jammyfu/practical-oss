@@ -1,12 +1,13 @@
 {
   "stars_at": [
     "2026-10-10",
-    "2026-10-11"
+    "2026-10-11",
+    "2026-10-12"
   ],
   "trending_captured_on": "2026-10-10",
-  "count": 91,
+  "count": 95,
   "history_count": 61,
-  "current_count": 30,
+  "current_count": 34,
   "categories": [
     {
       "id": "cli",
@@ -242,6 +243,27 @@
       ],
       "path": "entries/backend/django.md",
       "trending": false
+    },
+    {
+      "name": "Envoy Gateway",
+      "slug": "envoy-gateway",
+      "category": "backend",
+      "primary_repo": "envoyproxy/gateway",
+      "url": "https://github.com/envoyproxy/gateway",
+      "website": "https://gateway.envoyproxy.io",
+      "license": "Apache-2.0",
+      "language": "Go",
+      "stars": 3074,
+      "stars_at": "2026-10-12",
+      "summary": "用 Gateway API 管理 Envoy，把集群入口的路由和策略从 Ingress 注解里拆出来。",
+      "tags": [
+        "网关",
+        "Gateway API"
+      ],
+      "trending": true,
+      "trending_why": "2024 年发布 1.0；Ingress NGINX 在 2026 年 3 月停止维护后，它成为迁到 Gateway API 的常见实现。",
+      "stars_note": "星标低于 Envoy 本体。它是 Gateway API 的实现之一，不是 Ingress NGINX 的唯一后继。",
+      "path": "entries/backend/envoy-gateway.md"
     },
     {
       "name": "Envoy",
@@ -511,6 +533,26 @@
       ],
       "path": "entries/cli/git.md",
       "trending": false
+    },
+    {
+      "name": "Jujutsu",
+      "slug": "jj",
+      "category": "cli",
+      "primary_repo": "jj-vcs/jj",
+      "url": "https://github.com/jj-vcs/jj",
+      "website": "https://jj-vcs.dev",
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "stars": 31973,
+      "stars_at": "2026-10-12",
+      "summary": "用 Git 仓库当存储，在上面做没有暂存区、冲突也能提交的版本管理。",
+      "tags": [
+        "版本控制",
+        "Git"
+      ],
+      "trending": true,
+      "trending_why": "近两年采用明显变多。它兼容现有 Git 仓库，同时拿掉暂存区，并把冲突留在历史里。",
+      "path": "entries/cli/jj.md"
     },
     {
       "name": "jq",
@@ -862,6 +904,26 @@
       ],
       "path": "entries/data/valkey.md",
       "trending": false
+    },
+    {
+      "name": "Helix",
+      "slug": "helix",
+      "category": "editor",
+      "primary_repo": "helix-editor/helix",
+      "url": "https://github.com/helix-editor/helix",
+      "website": "https://helix-editor.com",
+      "license": "MPL-2.0",
+      "language": "Rust",
+      "stars": 46554,
+      "stars_at": "2026-10-12",
+      "summary": "在终端里用模态编辑写代码，语法高亮和语言服务不用另外拼。",
+      "tags": [
+        "编辑器",
+        "终端"
+      ],
+      "trending": true,
+      "trending_why": "近两年不少人把它当成默认的模态编辑器，语法、多光标和语言服务开箱就有。",
+      "path": "entries/editor/helix.md"
     },
     {
       "name": "Neovim",
@@ -1371,6 +1433,26 @@
       ],
       "path": "entries/media/obs-studio.md",
       "trending": false
+    },
+    {
+      "name": "Penpot",
+      "slug": "penpot",
+      "category": "media",
+      "primary_repo": "penpot/penpot",
+      "url": "https://github.com/penpot/penpot",
+      "website": "https://penpot.app",
+      "license": "MPL-2.0",
+      "language": "Clojure",
+      "stars": 60929,
+      "stars_at": "2026-10-12",
+      "summary": "用浏览器做界面设计和原型，布局和标注直接对应到 Web 标准。",
+      "tags": [
+        "设计",
+        "原型"
+      ],
+      "trending": true,
+      "trending_why": "2024 年的 2.0 补上组件系统和 CSS 布局之后，它成为团队能拿来替代专有设计工具的开源选择。",
+      "path": "entries/media/penpot.md"
     },
     {
       "name": "Grafana Alloy",
