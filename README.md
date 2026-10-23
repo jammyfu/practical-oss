@@ -1,5 +1,11 @@
 # 实用开源项目志
 
+<!-- geo:badges -->
+**practical-oss** is a purpose-organized catalog of widely used open-source projects: what each does, where it fits in a workflow, its limits, and its current license status.
+
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)](LICENSE) [![Catalog JSON](https://img.shields.io/badge/catalog-JSON-blue)](catalog/index.json) [![Release](https://img.shields.io/github/v/release/jammyfu/practical-oss)](https://github.com/jammyfu/practical-oss/releases)
+
+
 按用途收集热度高、真正被广泛使用的开源软件。每一篇都单独说明：它解决什么问题、核心功能、通常放在工作流的哪一步、边界在哪里、许可证现在怎么算。
 
 这不是星标排行榜。星标只作为热度旁证，统计日写在每篇开头。行业默认、但 GitHub 镜像星标不高的项目，例如 PostgreSQL，照样收录。许可证已经离开开源定义的著名项目也会收录，并写明替代分支，避免把「仓库还能看到源码」误写成「仍然是开源软件」。

@@ -1,0 +1,7 @@
+# practical-oss / 实用开源项目志
+
+> Purpose-organized catalog of widely used open-source software. Each entry explains the problem it solves, core features, where it sits in a workflow, its boundaries, and its current license status (including projects that left OSI licenses, with forks noted). Text under CC BY 4.0. 按用途分类的实用开源项目志。
+
+- Repository: https://github.com/jammyfu/practical-oss
+- Machine-readable catalog: catalog/index.json; categories: catalog/categories.json
+- All-time list: catalog/history.md; trending snapshots: catalog/trending/
