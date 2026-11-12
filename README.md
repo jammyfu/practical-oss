@@ -1,9 +1,13 @@
 # 实用开源项目志
 
+![Project header](.github/social-preview.png)
+
+[English](docs/README.en.md) · [简体中文](docs/README.zh-CN.md) · [繁體中文（臺灣）](docs/README.zh-TW.md) · [日本語](docs/README.ja.md) · [한국어](docs/README.ko.md)
+
 <!-- geo:badges -->
 **practical-oss** is a purpose-organized catalog of widely used open-source projects: what each does, where it fits in a workflow, its limits, and its current license status.
 
-[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)](LICENSE) [![Catalog JSON](https://img.shields.io/badge/catalog-JSON-blue)](catalog/index.json) [![Release](https://img.shields.io/github/v/release/jammyfu/practical-oss)](https://github.com/jammyfu/practical-oss/releases)
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)](LICENSE) [![Catalog JSON](https://img.shields.io/badge/catalog-JSON-blue)](catalog/index.json)
 
 
 按用途收集热度高、真正被广泛使用的开源软件。每一篇都单独说明：它解决什么问题、核心功能、通常放在工作流的哪一步、边界在哪里、许可证现在怎么算。
@@ -12,7 +16,7 @@
 
 ## 怎么读
 
-主文件只做目录。热度拆成两处：[历史最高](catalog/history.md) 是长期默认，[当前热度最高](catalog/trending/2026-10-10/index.md) 按日、周、月看趋势，文件夹名是抓取日。用途分类在 `catalog/categories/`，每种一页。项目说明仍在 `entries/`，五节顺序固定。
+主文件只做目录。热度拆成两处：[历史最高](catalog/history.md) 是长期默认，[趋势历史快照](catalog/trending/2026-10-10/index.md) 按日、周、月查看历史趋势，文件夹名是抓取日。用途分类在 `catalog/categories/`，每种一页。项目说明仍在 `entries/`，五节顺序固定。
 
 机器可读目录在 [`catalog/index.json`](catalog/index.json)。分类定义在 [`catalog/categories.json`](catalog/categories.json)。新增一篇的规则在 [CONTRIBUTING.md](CONTRIBUTING.md)。想用口语把项目讲清楚，看 [`notes/2026-10-12.md`](notes/2026-10-12.md)。
 
@@ -22,12 +26,12 @@
 
 ## 热度
 
-历史最高是长期默认。当前热度最高按日、周、月看 GitHub 趋势，不跟总星标混在一张表里。趋势页的目录名是抓取日。
+历史最高是长期默认。趋势历史快照按日、周、月看 GitHub 趋势，不跟总星标混在一张表里。趋势页的目录名是抓取日。
 
 | 名单 | 怎么分 | 篇数 |
 | --- | --- | ---: |
 | [历史最高](catalog/history.md) | 长期默认，按总星标 | 61 |
-| [当前热度最高](catalog/trending/2026-10-10/index.md) | 日、周、月三档趋势，抓取日 2026-10-10 | 见该页 |
+| [趋势历史快照](catalog/trending/2026-10-10/index.md) | 日、周、月三档趋势，抓取日 2026-10-10 | 见该页 |
 
 ## 用途
 
