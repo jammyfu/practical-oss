@@ -21,7 +21,7 @@ CATEGORY_DIR = PAGES / "categories"
 WINDOW_FILE = {"日": "day.md", "周": "week.md", "月": "month.md"}
 STALE_PAGES = (
     "历史最高.md",
-    "当前热度最高.md",
+    "趋势历史快照.md",
     "当前热度-日.md",
     "当前热度-周.md",
     "当前热度-月.md",
@@ -163,7 +163,7 @@ def render_category(category: dict, rows: list[dict], captured_on: str) -> str:
         "",
         category["summary"],
         "",
-        f"返回 [目录]({back})。跨分类的名单在 [历史最高]({history_link}) 和 [当前热度最高]({current_link})。",
+        f"返回 [目录]({back})。跨分类的名单在 [历史最高]({history_link}) 和 [趋势历史快照]({current_link})。",
         "",
         "## 近两年的新默认",
         "",
@@ -190,7 +190,7 @@ def render_history(entries: list[dict], names: dict[str, str], captured_on: str)
         "",
         "长期默认，不含近两年才标成新默认的项目。按收录时的 GitHub 星标从高到低排列。各篇的统计日写在 `stars_at`。",
         "",
-        f"返回 [目录]({back})。日、周、月趋势在 [当前热度最高]({rel_link(page, trending_dir(captured_on) / 'index.md')})。",
+        f"返回 [目录]({back})。日、周、月趋势在 [趋势历史快照]({rel_link(page, trending_dir(captured_on) / 'index.md')})。",
         "",
         *heat_table(rows, page, names, current=False),
         FOOTER,
@@ -204,13 +204,13 @@ def render_window_page(window: dict, captured_on: str) -> str:
     back = rel_link(page, trending_dir(captured_on) / "index.md")
     rows = sorted(window["repos"], key=lambda row: (-row["gain"], row["repo"].lower()))
     lines = [
-        f"# 当前热度 · {window['title']}",
+        f"# 趋势历史快照 · {window['title']}",
         "",
         f"抓取日 {captured_on}。",
         window["lead"],
         "表内按这一档新增星标从高到低排。",
         "",
-        f"返回 [当前热度最高]({back})。",
+        f"返回 [趋势历史快照]({back})。",
         "",
         "| 顺序 | 项目 | 这一档新增 | 许可 | 它做什么 |",
         "| ---: | --- | ---: | --- | --- |",
@@ -229,7 +229,7 @@ def render_window_page(window: dict, captured_on: str) -> str:
 def render_current(captured_on: str, snapshot: dict) -> str:
     page = trending_dir(captured_on) / "index.md"
     lines = [
-        "# 当前热度最高",
+        "# 趋势历史快照",
         "",
         f"按日、周、月分开。数据取自 {snapshot['source']}，抓取日 {captured_on}。目录名用的就是这一天。各档按该档新增星标从高到低排，新增星标是趋势页上的数字。",
         "",
@@ -254,12 +254,12 @@ def render_readme(categories: list[dict], entries: list[dict], captured_on: str)
     lines = [
         "## 热度",
         "",
-        "历史最高是长期默认。当前热度最高按日、周、月看 GitHub 趋势，不跟总星标混在一张表里。趋势页的目录名是抓取日。",
+        "历史最高是长期默认。趋势历史快照按日、周、月看 GitHub 趋势，不跟总星标混在一张表里。趋势页的目录名是抓取日。",
         "",
         "| 名单 | 怎么分 | 篇数 |",
         "| --- | --- | ---: |",
         f"| [历史最高](catalog/history.md) | 长期默认，按总星标 | {len(history)} |",
-        f"| [当前热度最高](catalog/trending/{captured_on}/index.md) | 日、周、月三档趋势，抓取日 {captured_on} | 见该页 |",
+        f"| [趋势历史快照](catalog/trending/{captured_on}/index.md) | 日、周、月三档趋势，抓取日 {captured_on} | 见该页 |",
         "",
         "## 用途",
         "",

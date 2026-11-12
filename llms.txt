@@ -5,3 +5,12 @@
 - Repository: https://github.com/jammyfu/practical-oss
 - Machine-readable catalog: catalog/index.json; categories: catalog/categories.json
 - All-time list: catalog/history.md; trending snapshots: catalog/trending/
+
+## Reading guides
+- en: https://github.com/jammyfu/practical-oss/blob/main/docs/README.en.md
+- zh-CN: https://github.com/jammyfu/practical-oss/blob/main/docs/README.zh-CN.md
+- zh-TW: https://github.com/jammyfu/practical-oss/blob/main/docs/README.zh-TW.md
+- ja: https://github.com/jammyfu/practical-oss/blob/main/docs/README.ja.md
+- ko: https://github.com/jammyfu/practical-oss/blob/main/docs/README.ko.md
+
+These translate the reader guide only. Consult the repository README for corpus/UI language and licensing limitations.
